@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MiniLoja — apoio à disciplina D1.2</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+<h1 id="miniloja--apoio-à-disciplina-d12">MiniLoja — apoio à disciplina
+D1.2</h1>
+<p>Este pacote apoia os seis blocos de <strong>Desenvolvimento Assistido
+por IA (24h)</strong>. MiniLoja é um caso fictício de pedidos de uma
+loja de material esportivo. Você o usa nas práticas: escolhe o modo de
+interação com IA, declara escopo, refatora, verifica com testes de
+verdade, lê um código desconhecido, revisa um pull request e mede o seu
+contexto. Toda prática roda em código que você precisa <strong>verificar
+depois</strong>.</p>
+<p>O caso e suas verificações já podem ser executados. O professor
+conduz as demonstrações; cada bloco reserva a segunda metade da aula a
+uma <strong>prática</strong> com registro individual (AV1). As
+instruções indicam insumos próprios, entregável e rubrica. Não há
+entrega coletiva obrigatória.</p>
+<h2 id="orientação-das-atividades">Orientação das atividades</h2>
+<p>O <a href="apoio/guia-atividades-fds1.html">guia do fim de semana 1</a>
+(AV1.1 a AV1.3, e AV2) e o <a href="apoio/guia-atividades-fds2.html">guia
+do fim de semana 2</a> (AV1.4 a AV1.6, e AV3) reúnem dados, passos,
+exemplos de preenchimento e rubricas. Servem para consulta individual e
+impressão.</p>
+<h2 id="preparação-do-ambiente">Preparação do ambiente</h2>
+<p>Obtenha o pacote disponibilizado pelo professor e abra esta pasta. A
+execução local usa <strong>Python 3.11 ou superior e somente a
+biblioteca padrão</strong>; o pacote foi verificado com <strong>Python
+3.12.3</strong>. Não há dependências adicionais. Um assistente de IA (no
+editor, no navegador ou um agente de codificação) apoia as práticas; a
+ferramenta é intercambiável. Se não houver acesso à ferramenta ou ao
+ambiente local, use as <strong>respostas simuladas</strong> de
+<code>apoio/respostas-simuladas/</code> e a transcrição de
+<code>apoio/resultado-textual.md</code>. A instalação local não é
+condição para demonstrar os objetivos da disciplina.</p>
+<p><strong>Regras do jogo:</strong> trabalhe em uma <strong>cópia
+sua</strong> do pacote, em uma <strong>branch por tarefa</strong> se
+usar git, com a árvore limpa antes de cada execução de agente.
+<strong>Nenhum código ou dado do seu empregador</strong> entra nas
+práticas em sala. Use apenas os dados fictícios fornecidos.</p>
+<h2 id="navegação">Navegação</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Pasta</th>
+<th>Conteúdo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>caso/</code></td>
+<td>Contrato (<code>regras.md</code>), código em
+<code>caso/miniloja/</code>, suíte existente em
+<code>caso/testes_existentes/</code>, dados sintéticos em
+<code>caso/dados/</code></td>
+</tr>
+<tr class="even">
+<td><code>testes/</code></td>
+<td>Onze verificações do caso e a ferramenta de mutação</td>
+</tr>
+<tr class="odd">
+<td><code>apoio/</code></td>
+<td>Guias, respostas simuladas identificadas, transcrição de execução e
+execução acompanhada do bloco 3</td>
+</tr>
+<tr class="even">
+<td><code>exercicios/aula-1/</code> a <code>aula-6/</code></td>
+<td>Enunciados e modelos de registro de cada bloco</td>
+</tr>
+<tr class="odd">
+<td><code>avaliacoes/</code></td>
+<td>Índice, AV2 e AV3</td>
+</tr>
+</tbody>
+</table>
+<p>As pastas <code>caso/legado/</code> (bloco 4) e
+<code>apoio/pr-bloco5/</code> (bloco 5) contêm apenas um aviso: o
+professor libera o conteúdo na data da aula, para que o código
+<strong>continue desconhecido</strong> até lá.</p>
+<h2 id="comece-pelos-exercícios-do-seu-bloco">Comece pelos exercícios do
+seu bloco</h2>
+<p>Leia o <a href="exercicios/README.html">guia de preenchimento e
+entrega</a>. Ele explica qual arquivo preencher, o que é evidência e
+como registrá-la.</p>
+<p>AV1: <a href="exercicios/aula-1/README.html">bloco 1 — escolher o
+modo</a> · <a href="exercicios/aula-2/README.html">bloco 2 — declarar
+escopo</a> · <a href="exercicios/aula-3/README.html">bloco 3 — testes que
+falham</a> · <a href="exercicios/aula-4/README.html">bloco 4 — ler legado
+com prova</a> · <a href="exercicios/aula-5/README.html">bloco 5 — revisar
+PR de agente</a> · <a href="exercicios/aula-6/README.html">bloco 6 — medir
+e automatizar</a>.</p>
+<ol type="1">
+<li>Leia o enunciado (<code>README.md</code>) do bloco e os dados
+indicados.</li>
+<li>Faça uma cópia do <code>template-registro.md</code> desse bloco ou
+copie o conteúdo para um editor de texto. O HTML é uma versão de
+leitura, não um formulário.</li>
+<li>Preencha as respostas e as evidências no mesmo documento, com até
+uma página. Informe se a análise foi manual ou se houve execução, e
+declare eventual uso de IA.</li>
+<li>Confira o checklist e envie o registro pelo canal e no formato
+informados pelo professor. Não é necessário enviar commit nem alterar
+este repositório para entregar.</li>
+</ol>
+<h2 id="execução-do-código-do-caso">Execução do código do caso</h2>
+<p>Execute na raiz desta pasta:</p>
+<pre><code>python -B testes/test_miniloja.py --codigo caso</code></pre>
+<p>Há <strong>onze verificações</strong>. No material inicial,
+<strong>oito passam e três falham</strong>; as três são as tarefas do
+bloco 1. O processo retorna código de saída <code>1</code> quando há
+falha e <code>0</code> quando todas passam. Elas verificam o material e
+não atribuem nota. <strong>Uma execução verde se limita ao que foi
+testado.</strong></p>
+<p>Para rodar a suíte existente do caso (26 testes, parte deles
+tautológica de propósito) e a mutação:</p>
+<pre><code>python -B testes/test_miniloja.py --codigo caso --existentes
+python -B testes/mutacao_manual.py</code></pre>
+<p>Consulte <a href="testes/README.html">testes/README.md</a> para
+executar uma verificação isolada e <a
+href="apoio/resultado-textual.html">apoio/resultado-textual.md</a> para
+ler a transcrição de uma execução.</p>
+<h2 id="avaliações-da-pós-graduação">Avaliações da pós-graduação</h2>
+<ul>
+<li><a href="avaliacoes/README.html">Índice dos enunciados e modelos: AV1,
+AV2 e AV3</a></li>
+<li><a href="avaliacoes/av2/README.html">AV2 — refatoração e testes
+verificáveis</a></li>
+<li><a href="avaliacoes/av3/README.html">AV3 — entrega final: PR assistido
+e medição</a></li>
+</ul>
+<p>Composição proposta: AV1 20% (média dos registros dos blocos com
+presença), AV2 30%, AV3 50%. As 6h autônomas são leitura L0 2h + AV2 2h
++ AV3 2h. As rubricas avaliam aplicação, evidência e argumentação
+individuais.</p>
+<h2 id="documentos-da-disciplina">Documentos da disciplina</h2>
+<ul>
+<li><a href="ementa.html">Plano de ensino da turma</a></li>
+<li><a href="boas-vindas.html">Boas-vindas e preparação</a></li>
+<li><a href="avaliacao.html">Avaliação e critérios</a></li>
+<li><a href="estudo-autonomo.html">Estudo autônomo e prazos</a></li>
+<li><a href="glossario.html">Glossário</a></li>
+<li><a href="diagnostico.html">Diagnóstico sem nota</a></li>
+</ul>
+<p>Datas: 16–17/10 e 23–24/10/2026. As aulas e entregas usam horário de
+Brasília. O pacote funciona localmente; o canal acadêmico de envio será
+informado pelo professor.</p>
+</body>
+</html>

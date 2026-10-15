@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>&gt; **RESPOSTA SIMULADA.** Texto construído pelo professor para análise, identificado como simulação. Não é saída real de um modelo e não mede desempenho de nenhuma ferramenta. Quem a usa **não deve declarar ter executado** a tarefa.</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<blockquote>
+<p><strong>RESPOSTA SIMULADA.</strong> Texto construído pelo professor
+para análise, identificado como simulação. Não é saída real de um modelo
+e não mede desempenho de nenhuma ferramenta. Quem a usa <strong>não deve
+declarar ter executado</strong> a tarefa.</p>
+</blockquote>
+<h1 id="bloco-1--t1-em-modo-agente-simulado">Bloco 1 · T1 em modo
+"agente" (simulado)</h1>
+<p><strong>Pedido:</strong> "Valide o CPF no cadastro de cliente."</p>
+<p><strong>Mensagem final do agente (simulada):</strong> "Implementei a
+validação de CPF em <code>cadastro.py</code>. Todos os testes
+passam."</p>
+<p><strong>Resumo do diff simulado:</strong></p>
+<ul>
+<li><code>caso/miniloja/cadastro.py</code>: nova função
+<code>cpf_valido</code>; o cadastro passa a recusar CPF inválido.</li>
+<li><code>caso/miniloja/handlers.py</code>: reformatação de imports e
+renomeação de uma variável (não pedido).</li>
+<li><code>caso/testes_existentes/test_cadastro.py</code>: expectativa
+alterada para <code>422</code> e um caso de CPF adicionado.</li>
+</ul>
+<p><strong>Para você analisar:</strong></p>
+<ol type="1">
+<li>O que está <strong>fora do escopo</strong> do pedido? Como você o
+evitaria (escopo declarado)?</li>
+<li>O agente alterou um <strong>teste existente</strong>. Isso é
+aceitável? Em que condição?</li>
+<li>"Todos os testes passam": qual comando você rodaria para conferir? A
+suíte existente cobre a regra de <strong>todos os dígitos
+iguais</strong>? E a verificação <code>v10</code> (lista de todos os
+erros), que não era parte do pedido?</li>
+<li>O que você registraria como erro da IA, e o que como acerto?</li>
+</ol>
+</body>
+</html>

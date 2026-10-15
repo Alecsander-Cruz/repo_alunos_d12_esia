@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AV1.5 — Revisar um PR de agente</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<h1 id="av15--revisar-um-pr-de-agente">AV1.5 — Revisar um PR de
+agente</h1>
+<p><strong>Individual — registro consolidado em 35min — B5, 24/10/2026,
+prática 10h10–11h30 (Brasília).</strong> Integra AV1, que vale 20% da
+nota pela média simples dos registros dos blocos com presença. Consulte
+a <a href="../../avaliacao.html">avaliação e rubrica pública</a>.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Quero revisar um pull request gerado por agente com critério,
+sustentando tecnicamente o que aprovo e o que rejeito, e decidir sobre o
+merge.</p>
+<h2 id="contexto-e-insumos">Contexto e insumos</h2>
+<p>O professor libera o <strong>pull request</strong> em
+<code>apoio/pr-bloco5/</code> na hora do bloco (veja <a
+href="../../apoio/pr-bloco5/LEIA-ME.html">apoio/pr-bloco5/LEIA-ME.md</a>),
+com a descrição escrita pelo agente. O texto do PR é uma
+<strong>alegação</strong>, não uma evidência: verifique rodando e
+lendo.</p>
+<ul>
+<li><strong>Plenária (25min):</strong> a turma constrói o checklist de
+revisão para código assistido (cada um cita um defeito que já viu;
+agrupamos; cada falha vira uma pergunta verificável; marcamos o que
+<strong>bloqueia</strong> o merge).</li>
+<li><strong>Funil de revisão:</strong> intenção e escopo → testes
+primeiro → contratos e superfície pública → segurança e dependências →
+estrutura e manutenção → execução independente.</li>
+<li><strong>Contrato:</strong> <code>caso/regras.md</code> (inclui
+<strong>R4</strong>, acesso).</li>
+<li><a href="template-registro.html">Template individual</a>.</li>
+</ul>
+<h2 id="passos--35min">Passos — 35min</h2>
+<ol type="1">
+<li><strong>Ler — 5min.</strong> Leia a descrição do PR e liste as
+alegações que ela faz (por exemplo, "testes passam", "sem mudança de
+comportamento").</li>
+<li><strong>Produzir individualmente — 20min.</strong> Aplique o
+checklist ao PR e rode você mesmo o que a descrição diz que rodou.
+Registre <strong>ao menos quatro achados</strong>, cada um com: onde
+(arquivo), por que importa (impacto), severidade
+(<strong>bloqueia</strong> o merge ou <strong>comenta</strong>) e a
+correção sugerida com o <strong>teste que falharia</strong> sem ela.
+Confira cada alegação do texto do PR contra o que você observou. Decida
+o merge.</li>
+<li><strong>Revisar pela rubrica — 5min.</strong> Confira se cada achado
+bloqueante tem impacto explicado e um teste, e se o parecer não depende
+do texto do PR.</li>
+<li><strong>Entregar — 5min.</strong> Finalize um único registro
+individual de até uma página, usando o template. O canal acadêmico será
+informado pelo professor; este material não presume endereço de
+envio.</li>
+</ol>
+<h2 id="entrega-e-checklist">Entrega e checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Pelo menos quatro achados com onde,
+impacto, severidade e correção com teste.</label></li>
+<li><label><input type="checkbox" />Alegações da descrição do PR
+conferidas (confirmada ou refutada, com evidência).</label></li>
+<li><label><input type="checkbox" />Decisão sobre o merge e condição
+para aprovar.</label></li>
+<li><label><input type="checkbox" />Dependência nova checada (existe?
+quem mantém? é necessária?).</label></li>
+<li><label><input type="checkbox" />Origem e declaração de IA, se
+utilizada.</label></li>
+</ul>
+<p><strong>Critério de conclusão:</strong> outra pessoa consegue
+reproduzir cada achado e entender por que ele bloqueia ou não o merge. A
+decisão não depende de confiar no texto do PR.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critério AV1</th>
+<th>Peso</th>
+<th>Indicadores deste registro</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicação/decisão</td>
+<td>30%</td>
+<td>Severidade coerente (bloqueia versus comenta); decisão de merge
+fundamentada; responsabilidade de quem aprova explicitada.</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>40%</td>
+<td>Achados reproduzíveis (arquivo, comando ou teste); alegações do PR
+conferidas.</td>
+</tr>
+<tr class="odd">
+<td>Limites/alternativa</td>
+<td>30%</td>
+<td>O que a revisão não cobre (por exemplo, análise estática e testes de
+abuso) e condição para aprovar.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dica:</strong> revisar não é concordar com o PR. Um
+comentário técnico diz o problema, o impacto e a correção, com um teste.
+"Parece arriscado" não é parecer.</p>
+</body>
+</html>

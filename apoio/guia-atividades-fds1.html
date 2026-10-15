@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Guia do fim de semana 1 — AV1.1, AV1.2, AV1.3 e AV2</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../estilo.css" />
+</head>
+<body>
+<h1 id="guia-do-fim-de-semana-1--av11-av12-av13-e-av2">Guia do fim de
+semana 1 — AV1.1, AV1.2, AV1.3 e AV2</h1>
+<p>Consulta individual e impressão. Cada seção resume o enunciado; o
+enunciado completo e o modelo estão em
+<code>exercicios/aula-N/</code>.</p>
+<h2 id="av11--escolher-o-modo-1610-prática-20h3021h35">AV1.1 — Escolher
+o modo (16/10, prática 20h30–21h35)</h2>
+<ul>
+<li><strong>Dados:</strong> contrato R3 (<code>caso/regras.md</code>),
+verificações v07 a v11, CPFs fictícios em
+<code>caso/dados/cpfs.json</code>.</li>
+<li><strong>Passos:</strong> defina o critério de aceite → execute
+<strong>T1 em dois modos</strong> e T2 em um → decida
+<strong>T3</strong> (hipotética) sem executar → registre.</li>
+<li><strong>Exemplo de preenchimento (outra tarefa, não copie):</strong>
+"Tarefa: validar e-mail. Modo A (completar): 3min até 1ª versão, 9min
+até verificado, 1 ida e volta, 20% corrigido; a IA aceitou
+<code>a@b</code>. Verifiquei com 3 casos de borda. Modo B (agente):
+6min, 14min, 3 idas e voltas, 40% corrigido; o agente alterou um teste
+existente."</li>
+<li><strong>Rubrica:</strong> aplicação/decisão 30% · evidência 40% ·
+limites/alternativa 30%.</li>
+</ul>
+<h2
+id="av12--declarar-escopo-antes-de-mudar-1710-prática-10h1011h30">AV1.2
+— Declarar escopo antes de mudar (17/10, prática 10h10–11h30)</h2>
+<ul>
+<li><strong>Dados:</strong> <code>caso/miniloja/calculo.py</code>,
+contrato R1.</li>
+<li><strong>Passos:</strong> passo zero (golden master com igualdade
+exata) → rodada 1 sem escopo → desfazer → rodada 2 com seis campos e
+plano revisado → comparar → <code>AGENTS.md</code> mínimo.</li>
+<li><strong>Exemplo de escopo (outro módulo):</strong> "Objetivo:
+extrair a taxa de <code>calcular_total</code> para uma função. Pode
+tocar: <code>calculo.py</code>. Não pode tocar: assinatura pública,
+outros módulos. Invariantes: mesmas saídas do golden master. Pronto:
+verificações e golden verdes. Pare e pergunte se precisar mudar tipo
+numérico ou achar algo que pareça bug."</li>
+<li><strong>Rubrica:</strong> mesma da AV1.</li>
+</ul>
+<h2 id="av13--testes-que-falhariam-1710-prática-15h1016h30">AV1.3 —
+Testes que falhariam (17/10, prática 15h10–16h30)</h2>
+<ul>
+<li><strong>Dados:</strong> <code>caso/testes_existentes/</code>,
+<code>testes/mutacao_manual.py</code>, contrato R1 e R2; <a
+href="execucao-acompanhada-b3.html">execução acompanhada</a>.</li>
+<li><strong>Passos:</strong> classifique 3 testes → trate 2 mutantes →
+derive 3 casos do contrato e compare → ADR curto.</li>
+<li><strong>Exemplo de caso derivado (outra regra):</strong> "Entrada: 1
+item de R$ 10,00, UF XX, sem cupom. Esperado pelo contrato: (10,00 +
+29,90) × 1,08 = 43,092 → 43,09. Observado: ___."</li>
+<li><strong>Rubrica:</strong> mesma da AV1.</li>
+</ul>
+<h2 id="av2--refatoração-e-testes-verificáveis-prazo-2110-23h59">AV2 —
+Refatoração e testes verificáveis (prazo 21/10, 23h59)</h2>
+<ul>
+<li><strong>Passos:</strong> escopo e plano → mudança pequena com
+comportamento preservado → suíte com prova de que falharia →
+documentação → registro de até duas páginas.</li>
+<li><strong>Critérios:</strong> escopo e plano 20% · comportamento
+preservado 25% · suíte com verificação real 35% · documentação e ADR
+20%.</li>
+</ul>
+</body>
+</html>

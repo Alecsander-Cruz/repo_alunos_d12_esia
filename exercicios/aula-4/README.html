@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AV1.4 — Ler legado com prova</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<h1 id="av14--ler-legado-com-prova">AV1.4 — Ler legado com prova</h1>
+<p><strong>Individual — registro consolidado em 35min — B4, 23/10/2026,
+prática 20h05–21h25 (Brasília).</strong> Integra AV1, que vale 20% da
+nota pela média simples dos registros dos blocos com presença. Consulte
+a <a href="../../avaliacao.html">avaliação e rubrica pública</a>.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Quero usar IA para entender um código que ninguém do time escreveu e
+provar cada afirmação apontando o trecho, e depois planejar uma mudança
+segura.</p>
+<h2 id="contexto-e-insumos">Contexto e insumos</h2>
+<p>O professor libera o <strong>repositório desconhecido</strong> em
+<code>caso/legado/</code> na hora do bloco (veja o aviso em <a
+href="../../caso/legado/LEIA-ME.html">caso/legado/LEIA-ME.md</a>).
+<strong>Não leia o README do repositório antes</strong>: ele pode estar
+desatualizado. Modo de rodar: instruções do próprio repositório, sem
+rede.</p>
+<p>Cinco perguntas, com apoio do agente (ou da leitura direta):</p>
+<ol type="1">
+<li>Onde começa a ingestão e quais caminhos a disparam?</li>
+<li>Quem escreve na tabela <code>trabalhos</code>?</li>
+<li>Como o sistema classifica trabalhos e autores por área, e do que
+isso depende da API externa?</li>
+<li>Que relatórios existem e quem os dispara?</li>
+<li>Que configurações mudam o comportamento por ambiente, e qual de fato
+vale no agendamento?</li>
+</ol>
+<p>Formato de cada resposta: <strong>afirmação | trecho (arquivo:linha)
+| contraevidência buscada | status</strong> (confirmada, refutada ou
+incerta). Para toda afirmação do tipo "só X faz Y" ou "nunca é chamado",
+busque o contraexemplo. <a href="template-registro.html">Template
+individual</a>.</p>
+<h2 id="passos--35min">Passos — 35min</h2>
+<ol type="1">
+<li><strong>Ler — 5min.</strong> Leia as cinco perguntas e escreva,
+antes de abrir o código, onde você procuraria cada resposta.</li>
+<li><strong>Produzir individualmente — 20min.</strong> Responda as cinco
+perguntas com prova. Registre <strong>uma resposta do assistente que
+parecia certa e estava errada</strong> e como você a refutou. Antes de
+qualquer mudança, <strong>grave a saída</strong> de dois relatórios
+(caracterização mínima). Depois escreva um <strong>plano de
+migração</strong> para a API atual do serviço externo (consulte a
+documentação oficial), em fatias pequenas, separando o que um codemod
+resolve do que exige decisão humana.</li>
+<li><strong>Revisar pela rubrica — 5min.</strong> Confira se nenhuma
+resposta ficou sem trecho e se o plano indica a verificação de cada
+fatia.</li>
+<li><strong>Entregar — 5min.</strong> Finalize um único registro
+individual de até uma página, usando o template. O canal acadêmico será
+informado pelo professor; este material não presume endereço de
+envio.</li>
+</ol>
+<h2 id="entrega-e-checklist">Entrega e checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Cinco linhas com afirmação, trecho
+(arquivo:linha), contraevidência e status.</label></li>
+<li><label><input type="checkbox" />Uma resposta errada com aparência de
+certa, com a refutação.</label></li>
+<li><label><input type="checkbox" />Caracterização mínima: comando e
+saída gravada antes de mudar.</label></li>
+<li><label><input type="checkbox" />Plano de migração em fatias,
+mecânico × decisão humana, com a verificação de cada fatia.</label></li>
+<li><label><input type="checkbox" />Origem e declaração de IA, se
+utilizada.</label></li>
+</ul>
+<p><strong>Critério de conclusão:</strong> outra pessoa consegue abrir
+cada trecho citado e confirmar ou refutar a afirmação. O plano diz o que
+automatizar e o que decidir.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critério AV1</th>
+<th>Peso</th>
+<th>Indicadores deste registro</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicação/decisão</td>
+<td>30%</td>
+<td>Respostas com status honesto; plano que separa mudança mecânica de
+decisão humana.</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>40%</td>
+<td>Trecho e linha para cada afirmação; contraevidência buscada; saída
+gravada antes de mudar.</td>
+</tr>
+<tr class="odd">
+<td>Limites/alternativa</td>
+<td>30%</td>
+<td>O que a leitura não cobre (código dinâmico, configuração por
+ambiente, consumidores externos) e condição para reabrir uma
+resposta.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dica:</strong> pergunte a si mesmo, para cada "só" e cada
+"nunca": que busca derrubaria isso? Se não consegue formular a busca,
+você ainda não pode agir.</p>
+</body>
+</html>

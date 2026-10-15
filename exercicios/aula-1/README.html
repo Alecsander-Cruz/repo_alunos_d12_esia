@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AV1.1 — Escolher o modo</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<h1 id="av11--escolher-o-modo">AV1.1 — Escolher o modo</h1>
+<p><strong>Individual — registro consolidado em 35min — B1, 16/10/2026,
+prática 20h30–21h35 (Brasília).</strong> Integra AV1, que vale 20% da
+nota pela média simples dos registros dos blocos com presença. Consulte
+a <a href="../../avaliacao.html">avaliação e rubrica pública</a>.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Quero escolher o modo de interação com IA para três tarefas de
+desenvolvimento, executar uma delas em dois modos e registrar o que
+verifiquei e o que a IA errou.</p>
+<h2 id="contexto-e-insumos">Contexto e insumos</h2>
+<p>MiniLoja é o caso fictício de pedidos. Trabalhe com o contrato
+(<code>caso/regras.md</code>, regra <strong>R3</strong>) e com as
+verificações do caso. Todos os dados são fictícios.</p>
+<ul>
+<li><strong>R3.2:</strong> o <code>cpf</code> deve ter dígitos
+verificadores válidos e não pode ter todos os dígitos iguais.</li>
+<li><strong>R3.4:</strong> cadastro inválido responde <code>422</code>
+com a lista de <strong>todos</strong> os erros.</li>
+<li><a href="../../caso/regras.html">Contrato completo</a> · <a
+href="template-registro.html">template individual</a> · <a
+href="../../caso/dados/cpfs.json">dados de CPF</a>.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Cartão</th>
+<th>Tarefa e informações disponíveis</th>
+<th>Resultado solicitado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T1</td>
+<td>Validar o CPF no cadastro de cliente
+(<code>caso/miniloja/cadastro.py</code>). As verificações
+<code>v08</code> e <code>v09</code> falham hoje</td>
+<td>Código que faz <code>v08</code> e <code>v09</code> passarem, sem
+quebrar as demais</td>
+</tr>
+<tr class="even">
+<td>T2</td>
+<td>O cadastro inválido deve responder <code>422</code> com a lista de
+todos os erros, em vez de <code>400</code> com mensagem única. A
+verificação <code>v10</code> falha hoje</td>
+<td>Código que faz <code>v10</code> passar</td>
+</tr>
+<tr class="odd">
+<td>T3</td>
+<td><strong>Hipotética, sem executar:</strong> lentidão em produção às
+02h. Você tem métricas e logs, e um agente que poderia rodar
+comandos</td>
+<td>Decisão sobre o modo e as permissões que você concederia</td>
+</tr>
+</tbody>
+</table>
+<p>Comando de verificação:
+<code>python -B testes/test_miniloja.py --codigo caso</code>. Sem
+ferramenta ou ambiente, analise as respostas simuladas em <a
+href="../../apoio/respostas-simuladas/">apoio/respostas-simuladas/</a>
+(b1-cpf-completar.md e b1-cpf-agente.md) e identifique-as como
+simuladas.</p>
+<h2 id="passos--35min">Passos — 35min</h2>
+<ol type="1">
+<li><strong>Ler — 5min.</strong> Leia R3 e rode (ou leia a transcrição
+de) as verificações. Defina o critério de aceite de T1 e T2 antes de
+escolher o modo.</li>
+<li><strong>Produzir individualmente — 20min.</strong> Execute
+<strong>T1 em dois modos diferentes</strong> (por exemplo, completar no
+editor e agente) e T2 em um modo à sua escolha. Registre, para cada
+execução, o tempo até a primeira versão e até "pronto e verificado", as
+idas e vindas, a fração que você corrigiu à mão, o que a IA errou e como
+você verificou. Alterne a ordem dos modos em relação ao seu colega de
+grupo. Em T3, decida modo e permissões <strong>sem executar</strong>,
+com base em raio de impacto, existência de oráculo e
+reversibilidade.</li>
+<li><strong>Revisar pela rubrica — 5min.</strong> Confira se cada modo
+está ligado ao pedido e se o registro mede "pronto verificado", não só
+"primeira versão".</li>
+<li><strong>Entregar — 5min.</strong> Finalize um único registro
+individual de até uma página, usando o template. O canal acadêmico será
+informado pelo professor; este material não presume endereço de
+envio.</li>
+</ol>
+<h2 id="entrega-e-checklist">Entrega e checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Execuções de T1 (dois modos) e T2
+registradas, com tempos, idas e vindas, correção e erro da
+IA.</label></li>
+<li><label><input type="checkbox" />Evidência: comando de verificação e
+trecho relevante da saída (ou "análise manual; execução não
+realizada").</label></li>
+<li><label><input type="checkbox" />T3 decidida com raio de impacto,
+oráculo e permissões.</label></li>
+<li><label><input type="checkbox" />Origem das respostas simuladas e
+declaração de IA, se utilizada.</label></li>
+<li><label><input type="checkbox" />Se alterou algum teste existente, o
+motivo registrado (a tarefa muda o contrato de <code>400</code> para
+<code>422</code>).</label></li>
+</ul>
+<p><strong>Critério de conclusão:</strong> outra pessoa consegue
+relacionar cada modo ao pedido e localizar a verificação que sustenta
+"pronto". A entrega escrita é suficiente e não depende de fala ou
+câmera.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critério AV1</th>
+<th>Peso</th>
+<th>Indicadores deste registro</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicação/decisão</td>
+<td>30%</td>
+<td>Modo justificado para cada execução; T3 decidida com raio de
+impacto, oráculo e permissões concedidas.</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>40%</td>
+<td>Comando e saída (ou análise declarada) para ao menos uma execução;
+erros da IA descritos de forma específica; tempo até "verificado".</td>
+</tr>
+<tr class="odd">
+<td>Limites/alternativa</td>
+<td>30%</td>
+<td>Limite da comparação (uma execução não prova nada) e condição
+concreta para mudar o modo.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dica:</strong> o tempo da primeira versão engana. Meça até
+estar <strong>verificado</strong>. Uma execução não prova nada sobre a
+ferramenta: ela serve para calibrar o seu julgamento. Não inclua dados
+do empregador.</p>
+</body>
+</html>

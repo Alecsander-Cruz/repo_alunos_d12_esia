@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>&gt; **RESPOSTA SIMULADA.** Texto construído pelo professor para análise, identificado como simulação. Não é saída real de um modelo e não mede desempenho de nenhuma ferramenta. Quem a usa **não deve declarar ter executado** a tarefa.</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<blockquote>
+<p><strong>RESPOSTA SIMULADA.</strong> Texto construído pelo professor
+para análise, identificado como simulação. Não é saída real de um modelo
+e não mede desempenho de nenhuma ferramenta. Quem a usa <strong>não deve
+declarar ter executado</strong> a tarefa.</p>
+</blockquote>
+<h1 id="bloco-2--rodada-1-sem-escopo-simulada">Bloco 2 · Rodada 1, sem
+escopo (simulada)</h1>
+<p><strong>Pedido:</strong> "Refatore <code>calcular_total</code>."</p>
+<p><strong>Resumo do diff simulado:</strong> 9 arquivos alterados, +412
+e −187 linhas.</p>
+<ul>
+<li><code>calculo.py</code> dividido em seis funções; <strong>valores
+monetários passam de <code>float</code> para
+<code>Decimal</code></strong>.</li>
+<li>Novo arquivo <code>utils.py</code> com helpers.</li>
+<li>Assinatura pública alterada: <code>calcular_total(pedido)</code> em
+vez de <code>calcular_total(itens, cupom, uf)</code>;
+<code>pedidos.py</code> e <code>handlers.py</code> ajustados.</li>
+<li>Ramo do cupom <code>NATAL</code> <strong>removido</strong> por
+"parecer código morto".</li>
+<li><code>testes_existentes/test_calculo.py</code> editado: valores
+esperados ajustados "para refletir o novo cálculo".</li>
+</ul>
+<p><strong>Para você analisar:</strong></p>
+<ol type="1">
+<li>Quais mudanças são de <strong>comportamento</strong>, e não de
+estrutura? Dê um exemplo numérico: para 2 itens de R$ 1,00 em PE, o
+código atual devolve 15,64; com <code>Decimal</code> e arredondamento
+meio para cima, 15,65. O golden master perceberia?</li>
+<li>O ramo <code>NATAL</code> é morto? (Veja <code>flags.py</code> e o
+contrato R1.2.) O golden master perceberia a remoção se a flag estiver
+desligada?</li>
+<li>Quanto tempo você levaria para revisar 9 arquivos? O que você
+aceitaria e o que rejeitaria?</li>
+</ol>
+</body>
+</html>

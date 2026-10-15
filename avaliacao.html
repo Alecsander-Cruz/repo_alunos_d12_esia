@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Avaliação e critérios — D1.2</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+<h1 id="avaliação-e-critérios--d12">Avaliação e critérios — D1.2</h1>
+<p>Referência pública para composição da nota, níveis 0–3 e rubricas
+completas. <strong>Pesos e prazos são proposta docente</strong>; o canal
+acadêmico de entrega será informado pelo professor. Horários de
+Brasília.</p>
+<h2 id="composição">Composição</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Instrumento</th>
+<th>Peso</th>
+<th>Esforço e entrega</th>
+<th>Prazo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AV1 — seis registros individuais</td>
+<td>20%</td>
+<td>Dentro da prática de cada bloco; até uma página; média simples dos
+blocos com presença</td>
+<td>Dentro de B1–B6</td>
+</tr>
+<tr class="even">
+<td><a href="avaliacoes/av2/README.html">AV2 — refatoração e testes
+verificáveis</a></td>
+<td>30%</td>
+<td>2h autônomas; registro curto + diff + testes</td>
+<td>21/10/2026, 23h59</td>
+</tr>
+<tr class="odd">
+<td><a href="avaliacoes/av3/README.html">AV3 — entrega final: PR assistido
+e medição</a></td>
+<td>50%</td>
+<td>2h autônomas; PR + registro de erros da IA + meia página de
+medição</td>
+<td>30/10/2026, 23h59</td>
+</tr>
+</tbody>
+</table>
+<p>L0 (leitura, 2h) é formativa e não tem nota própria.</p>
+<h2 id="cálculo">Cálculo</h2>
+<p>Todas as notas variam de 0 a 10. Níveis por critério: <strong>0
+ausente, 1 incipiente, 2 adequado, 3 consistente</strong>. <strong>Nota
+= 10 × soma(peso × nível/3).</strong> Todos os níveis 2 produzem 6,67.
+Exemplo: AV1 com pesos 30/40/30 e níveis 3, 2, 2 dá 10 × (0,30×1 +
+0,40×0,6667 + 0,30×0,6667) = 7,67.</p>
+<h2 id="rubrica-av1-cada-registro">Rubrica AV1 (cada registro)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Peso</th>
+<th>Nível 3</th>
+<th>Nível 2</th>
+<th>Nível 1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicação/decisão</td>
+<td>30%</td>
+<td>Decisão ligada às condições da tarefa, com responsabilidade
+clara</td>
+<td>Decisão adequada, ligação parcial</td>
+<td>Decisão sem relação com a tarefa</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>40%</td>
+<td>Evidência localizada que outra pessoa consegue conferir (comando,
+saída, trecho, cálculo)</td>
+<td>Evidência presente, difícil de conferir</td>
+<td>Afirmação sem evidência</td>
+</tr>
+<tr class="odd">
+<td>Limites/alternativa</td>
+<td>30%</td>
+<td>Limite da verificação e condição concreta para mudar a decisão</td>
+<td>Limite genérico</td>
+<td>Sem limite</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rubrica-av2">Rubrica AV2</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Peso</th>
+<th>Nível 3</th>
+<th>Nível 2</th>
+<th>Nível 1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Escopo e plano</td>
+<td>20%</td>
+<td>Seis campos antes da mudança e plano revisado</td>
+<td>Escopo escrito, plano sem revisão</td>
+<td>Só o objetivo</td>
+</tr>
+<tr class="even">
+<td>Comportamento preservado</td>
+<td>25%</td>
+<td>Golden master ou equivalente com igualdade exata</td>
+<td>Verificação parcial</td>
+<td>Sem verificação de comportamento</td>
+</tr>
+<tr class="odd">
+<td>Suíte com verificação real</td>
+<td>35%</td>
+<td>Teste que falharia sem a mudança, com evidência (sabotagem ou
+mutação); sobreviventes tratados ou justificados</td>
+<td>Testes com asserções reais, sem prova de que falhariam</td>
+<td>Cobertura sem verificação</td>
+</tr>
+<tr class="even">
+<td>Documentação e ADR</td>
+<td>20%</td>
+<td>Contrato e motivo registrados com contexto real</td>
+<td>Documentação correta, mas óbvia</td>
+<td>Documentação que repete o código</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rubrica-av3">Rubrica AV3</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Peso</th>
+<th>Nível 3</th>
+<th>Nível 2</th>
+<th>Nível 1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modo e justificativa</td>
+<td>10%</td>
+<td>Modo escolhido por raio de impacto, oráculo e familiaridade, com
+alternativa comparada</td>
+<td>Modo citado e justificado em parte</td>
+<td>Modo sem justificativa</td>
+</tr>
+<tr class="even">
+<td>Escopo declarado e cumprido</td>
+<td>15%</td>
+<td>Seis campos antes; diff dentro do escopo; barreira executada</td>
+<td>Escopo escrito depois ou cumprido em parte</td>
+<td>Sem escopo</td>
+</tr>
+<tr class="odd">
+<td>Mudança revisável</td>
+<td>15%</td>
+<td>PR pequeno, plano anexado, commits atômicos</td>
+<td>PR médio ou sem plano</td>
+<td>PR grande e misturado</td>
+</tr>
+<tr class="even">
+<td>Verificação efetiva</td>
+<td>20%</td>
+<td>Teste que falharia sem a mudança, com evidência</td>
+<td>Testes adequados, sem prova de falha</td>
+<td>Testes que só passam</td>
+</tr>
+<tr class="odd">
+<td>Honestidade sobre os erros da IA</td>
+<td>15%</td>
+<td>Registro específico (o quê, onde, como detectou)</td>
+<td>Registro genérico</td>
+<td>Ausente ou contradiz o diff</td>
+</tr>
+<tr class="even">
+<td>Justificativa técnica das correções</td>
+<td>10%</td>
+<td>Cada correção com causa e impacto</td>
+<td>Explicação parcial</td>
+<td>Sem explicação</td>
+</tr>
+<tr class="odd">
+<td>Medição e automação</td>
+<td>15%</td>
+<td>Pergunta, métrica, baseline, guardrail, risco de manipulação e
+verificação da automação</td>
+<td>Métrica sem baseline ou sem risco</td>
+<td>Ausente</td>
+</tr>
+</tbody>
+</table>
+<h2 id="presença-ausência-e-cálculo-de-av1">Presença, ausência e cálculo
+de AV1</h2>
+<p>AV1 é a <strong>média simples dos registros dos blocos com presença
+registrada, sem reposição por ausência</strong>. O bloco ausente fica
+fora da soma e do denominador; a falta permanece registrada para
+frequência. Presença e entrega são registros distintos: o bloco com
+presença integra o denominador mesmo sem entrega, e os critérios sem
+evidência recebem nível 0. Se não houver nenhum bloco com presença, não
+se calcula média e o lançamento é encaminhado à Secretaria. A regra para
+quem faltar a um bloco avaliado e a recuperação aguardam confirmação da
+coordenação e serão comunicadas antes do bloco 1.</p>
+<h2 id="devolutiva">Devolutiva</h2>
+<p>O professor registra <strong>nível 0–3 e evidência curta por
+critério</strong> em todos os registros AV1. A devolutiva individual
+desenvolvida (uma força, uma lacuna e uma ação de melhoria) ocorre em
+AV1.3 e AV1.6; nos demais, a turma recebe devolutiva coletiva sem
+identificação. AV2 e AV3 têm devolutiva individual. Pedidos de revisão
+indicam critério e evidência.</p>
+<h2 id="autoria-e-ia">Autoria e IA</h2>
+<p>IA é permitida com declaração: ferramenta e modelo visíveis, tarefa
+delegada, trecho aproveitado e a <strong>sua verificação</strong>.
+Avalia-se aplicação, evidência localizada, comparação e limite;
+<strong>não</strong> se avalia aparência da resposta, frequência,
+câmera, quantidade de prompts ou testes verdes. A via textual e a
+execução recebem os mesmos critérios. Simulações devem ser
+identificadas, e execução não realizada não pode ser declarada como
+observada. Não se exigem câmera, fala ou dados de empregador.</p>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Execução acompanhada do bloco 3</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../estilo.css" />
+</head>
+<body>
+<h1 id="execução-acompanhada-do-bloco-3">Execução acompanhada do bloco
+3</h1>
+<p>Roteiro para verificar, na sua cópia do caso, se a suíte existente
+<strong>perceberia</strong> um erro. Sem ambiente, leia a coluna
+"Observado na preparação": é o que o professor viu ao executar. Não
+declare como observado por você.</p>
+<h2 id="antes-de-começar">Antes de começar</h2>
+<p>Copie a pasta <code>caso/</code> para uma cópia de trabalho (por
+exemplo <code>trabalho/</code>) e use <code>--codigo trabalho</code> nos
+comandos. Confira a linha de base:
+<code>python -B testes/test_miniloja.py --codigo trabalho --existentes</code>
+deve terminar com <code>OK</code> (26 testes).</p>
+<h2
+id="sabotagens-sugeridas-arquivo-minilojacalculopy-e-minilojaestoquepy">Sabotagens
+sugeridas (arquivo <code>miniloja/calculo.py</code> e
+<code>miniloja/estoque.py</code>)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Sabotagem (uma por vez)</th>
+<th>Observado na preparação</th>
+<th>O que isso ensina</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>total = total * 0.9</code> → <code>total = total * 0.91</code>
+(cupom <code>PROMO10</code>)</td>
+<td><strong>Falhou</strong>: a suíte percebeu</td>
+<td>Há teste com asserção real para <code>PROMO10</code></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>frete = 21.5</code> → <code>frete = 22.5</code> (RJ)</td>
+<td><strong>Continuou verde</strong></td>
+<td>Nenhum teste exercita o frete do RJ</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>total = total * 0.8</code> → <code>0.79</code>
+(<code>NATAL</code>)</td>
+<td><strong>Continuou verde</strong></td>
+<td>O teste do <code>NATAL</code> só verifica
+<code>is not None</code></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>if disponivel &lt; qtd:</code> →
+<code>if disponivel &lt;= qtd:</code> (<code>estoque.py</code>)</td>
+<td><strong>Continuou verde</strong></td>
+<td>Falta o teste de borda (pedir exatamente o saldo)</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>if total &gt; 200:</code> →
+<code>if total &gt;= 200:</code></td>
+<td><strong>Falhou</strong></td>
+<td>Aqui o teste falhou por um motivo curioso: ele <strong>grava o valor
+atual</strong>. Confira o contrato (R1.3) antes de concluir que o código
+estava certo</td>
+</tr>
+</tbody>
+</table>
+<p>Registre cada resultado e <strong>desfaça a sabotagem</strong> antes
+da próxima.</p>
+<h2 id="mutação-automática">Mutação automática</h2>
+<p><code>python -B testes/mutacao_manual.py</code> repete esse processo
+com 31 falhas. Na preparação: 23 mortos, 8 sobreviventes, escore de 74%;
+a cobertura de linhas da mesma suíte é de cerca de 90%. Dos
+sobreviventes, um é <strong>equivalente</strong> (não muda o
+comportamento). Para cada um dos outros, escreva o teste que o
+mataria.</p>
+<h2 id="registro">Registro</h2>
+<p>Sem entrega nem nota adicional: use este roteiro para preencher a
+AV1.3.</p>
+</body>
+</html>

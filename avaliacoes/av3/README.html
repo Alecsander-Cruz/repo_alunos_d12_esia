@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AV3 — Entrega final: PR assistido e medição</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<h1 id="av3--entrega-final-pr-assistido-e-medição">AV3 — Entrega final:
+PR assistido e medição</h1>
+<p><strong>Individual — 2h autônomas — prazo 30/10/2026, 23h59
+(Brasília).</strong> Vale 50% da nota. Consulte a <a
+href="../../avaliacao.html">rubrica pública</a>.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Quero entregar um pull request assistido por IA que outra pessoa
+consiga revisar e verificar, com o registro honesto do que a IA errou, e
+a medição que desenhei para o meu time.</p>
+<h2 id="insumos">Insumos</h2>
+<ul>
+<li><strong>Caminho A (seu código):</strong> uma mudança pequena no
+<strong>seu próprio</strong> repositório pessoal ou de estudo. Nada do
+empregador.</li>
+<li><strong>Caminho B (MiniLoja):</strong> uma das tarefas abaixo, no
+seu fork do pacote.
+<ul>
+<li><strong>B1.</strong> Corrigir o acesso a pedidos de outro usuário
+(R4), com <strong>teste negativo</strong>.</li>
+<li><strong>B2.</strong> Migrar valores monetários de <code>float</code>
+para <code>Decimal</code> (R1.5), com golden master atualizado de
+propósito e um ADR.</li>
+<li><strong>B3.</strong> Corrigir a reserva de estoque que não é
+desfeita quando um item falha (R2.2), com teste de regressão.</li>
+</ul></li>
+<li>Seus registros AV1.1 a AV1.6 e a AV2.</li>
+</ul>
+<h2 id="o-que-entregar">O que entregar</h2>
+<ol type="1">
+<li><strong>O pull request</strong> (ou diff equivalente): descrição com
+intenção e escopo, plano, como foi verificado (comandos e saída), o
+teste que <strong>falharia sem a mudança</strong>, dependências novas
+(se houver) e o modo de interação usado, <strong>e por
+quê</strong>.</li>
+<li><strong>Registro do que a IA errou e do que você corrigiu</strong>,
+e por quê.</li>
+<li><strong>Meia página com a medição</strong> desenhada no bloco 6 e a
+tarefa recorrente candidata a automação, com a verificação que
+exigiria.</li>
+</ol>
+<h2 id="checklist">Checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Modo de interação justificado, com
+alternativa comparada.</label></li>
+<li><label><input type="checkbox" />Escopo declarado
+<strong>antes</strong> e cumprido; mudança revisável.</label></li>
+<li><label><input type="checkbox" />Teste que falharia sem a mudança,
+com evidência.</label></li>
+<li><label><input type="checkbox" />Honestidade na descrição do que a IA
+errou; justificativa técnica das correções.</label></li>
+<li><label><input type="checkbox" />Medição (pergunta, métrica,
+baseline, guardrail, risco de manipulação) e automação com
+verificação.</label></li>
+<li><label><input type="checkbox" />Procedência e declaração de
+IA.</label></li>
+</ul>
+<p><strong>Critério de conclusão:</strong> outra pessoa consegue revisar
+o diff, rodar a verificação e confrontar o registro de erros da IA com o
+que você entregou. Rubrica: modo 10% · escopo 15% · mudança revisável
+15% · verificação efetiva 20% · honestidade sobre a IA 15% ·
+justificativa das correções 10% · medição e automação 15%. <a
+href="template-registro.html">Modelo de registro</a>.</p>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Glossário</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+<h1 id="glossário">Glossário</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Termo</th>
+<th>O que significa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Agente de codificação</td>
+<td>Sistema que planeja, lê arquivos, roda comandos e edita código de
+forma iterativa</td>
+</tr>
+<tr class="even">
+<td>Modo de interação</td>
+<td>Forma de usar a IA: completar no editor, conversar, editar com
+escopo ou delegar a um agente</td>
+</tr>
+<tr class="odd">
+<td>Harness (ambiente)</td>
+<td>O que está em volta do modelo: arquivos que lê, comandos que roda,
+permissões, sandbox</td>
+</tr>
+<tr class="even">
+<td>Permissão (allowlist)</td>
+<td>Lista do que o agente pode ler, escrever ou executar sem
+perguntar</td>
+</tr>
+<tr class="odd">
+<td>Prompt injection</td>
+<td>Instrução maliciosa escondida em conteúdo que o agente lê (arquivo,
+issue, página, resposta de ferramenta)</td>
+</tr>
+<tr class="even">
+<td>MCP</td>
+<td>Padrão aberto para conectar aplicações de IA a ferramentas e dados
+externos</td>
+</tr>
+<tr class="odd">
+<td>Escopo declarado</td>
+<td>Texto, escrito antes, do que a mudança pode e não pode tocar e
+quando parar</td>
+</tr>
+<tr class="even">
+<td>Critério de parada</td>
+<td>Condição em que o agente deve parar e perguntar</td>
+</tr>
+<tr class="odd">
+<td>Plano</td>
+<td>Descrição das etapas que o agente pretende executar, revisada antes
+da execução</td>
+</tr>
+<tr class="even">
+<td>Diff</td>
+<td>Diferença entre duas versões do código</td>
+</tr>
+<tr class="odd">
+<td>Refatoração</td>
+<td>Mudar a estrutura sem mudar o comportamento observável</td>
+</tr>
+<tr class="even">
+<td>Golden master</td>
+<td>Gravar as saídas atuais para comparar depois da mudança</td>
+</tr>
+<tr class="odd">
+<td>Teste de caracterização</td>
+<td>Teste que registra o que o código faz hoje, certo ou errado</td>
+</tr>
+<tr class="even">
+<td>Oráculo</td>
+<td>Fonte do "resultado esperado" de um teste (contrato, regra,
+referência)</td>
+</tr>
+<tr class="odd">
+<td>Teste tautológico</td>
+<td>Teste que não pode falhar por erro do código, porque a asserção
+depende do próprio código ou de um dublê</td>
+</tr>
+<tr class="even">
+<td>Dublê (mock)</td>
+<td>Objeto que substitui um colaborador no teste</td>
+</tr>
+<tr class="odd">
+<td>Cobertura</td>
+<td>Proporção do código executada pelos testes; não diz se algo foi
+verificado</td>
+</tr>
+<tr class="even">
+<td>Mutação</td>
+<td>Teste que injeta pequenas falhas no código; mutante sobrevivente =
+suíte não notou</td>
+</tr>
+<tr class="odd">
+<td>Mutante equivalente</td>
+<td>Mutação que não altera o comportamento observável</td>
+</tr>
+<tr class="even">
+<td>ADR</td>
+<td>Registro de decisão arquitetural (contexto, decisão, consequências,
+alternativas)</td>
+</tr>
+<tr class="odd">
+<td>Legado</td>
+<td>Código sem testes ou que ninguém mais entende bem</td>
+</tr>
+<tr class="even">
+<td>Costura (seam)</td>
+<td>Ponto onde dá para alterar comportamento sem editar o código no
+lugar</td>
+</tr>
+<tr class="odd">
+<td>Codemod</td>
+<td>Transformação automática de código, normalmente baseada em árvore
+sintática</td>
+</tr>
+<tr class="even">
+<td>Viés de automação</td>
+<td>Tendência a confiar demais na saída de um sistema automatizado</td>
+</tr>
+<tr class="odd">
+<td>Slopsquatting</td>
+<td>Registro malicioso de nomes de pacotes inventados por IA</td>
+</tr>
+<tr class="even">
+<td>Baseline</td>
+<td>Medida de referência anterior à intervenção</td>
+</tr>
+<tr class="odd">
+<td>Guardrail</td>
+<td>Métrica de qualidade que acompanha a métrica principal</td>
+</tr>
+<tr class="even">
+<td>Lei de Goodhart</td>
+<td>Quando uma medida vira meta, deixa de ser boa medida</td>
+</tr>
+<tr class="odd">
+<td>SPACE / DORA</td>
+<td>Estruturas para medir produtividade e desempenho de entrega</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>Parte da resposta que permite a outra pessoa conferir sua
+conclusão</td>
+</tr>
+<tr class="odd">
+<td>Procedência</td>
+<td>De onde vieram os dados: enunciado, cálculo próprio, leitura de
+código ou execução própria</td>
+</tr>
+<tr class="even">
+<td>Saída simulada</td>
+<td>Texto construído para análise, identificado como simulação; não é
+medição real de modelo</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

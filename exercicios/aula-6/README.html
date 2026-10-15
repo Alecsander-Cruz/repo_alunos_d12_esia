@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AV1.6 — Medir e escolher o que automatizar</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<h1 id="av16--medir-e-escolher-o-que-automatizar">AV1.6 — Medir e
+escolher o que automatizar</h1>
+<p><strong>Individual — registro consolidado em 35min — B6, 24/10/2026,
+prática 15h10–16h25 (Brasília).</strong> Integra AV1, que vale 20% da
+nota pela média simples dos registros dos blocos com presença. Consulte
+a <a href="../../avaliacao.html">avaliação e rubrica pública</a>.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Quero desenhar uma medição honesta para o meu time e apontar uma
+tarefa recorrente candidata a automação, com a verificação que ela
+exigiria.</p>
+<h2 id="contexto-e-insumos">Contexto e insumos</h2>
+<p>Insumos: seus registros <strong>AV1.1 a AV1.3</strong> (tempo até
+"verificado", idas e vindas, tamanho de diff, escore de mutação) como um
+<strong>baseline em miniatura</strong> do curso, e o que você sabe do
+seu time. Não use dados do empregador: descreva o contexto de forma
+genérica.</p>
+<ul>
+<li><strong>Medição honesta:</strong> pergunta e a decisão que depende
+dela · métrica primária · guardrail de qualidade · baseline (de onde
+vem) · período e método · confundidores · <strong>risco de a métrica ser
+manipulada</strong>.</li>
+<li><strong>Automação:</strong> frequência · custo atual ·
+verificabilidade · variabilidade · raio de impacto · custo de manter. A
+saída do agente é <strong>proposta</strong>, não ação. Verificação:
+checagens determinísticas, permissões mínimas, orçamento e tempo-limite,
+responsável.</li>
+<li><strong>Risco de CI:</strong> não rode agente com segredos ou
+escrita sobre conteúdo não confiável (por exemplo, PR de fork).</li>
+<li><a href="template-registro.html">Template individual</a>.</li>
+</ul>
+<h2 id="passos--35min">Passos — 35min</h2>
+<ol type="1">
+<li><strong>Ler — 5min.</strong> Leia seus registros anteriores e
+escolha o contexto de time que você vai medir.</li>
+<li><strong>Produzir individualmente — 20min.</strong> Preencha o
+desenho da medição e a tarefa candidata a automação. Declare como a
+métrica poderia ser gamificada e qual guardrail protege a qualidade.
+Para a automação, escreva a verificação que a saída exigiria
+<strong>antes</strong> de qualquer ação.</li>
+<li><strong>Revisar pela rubrica — 5min.</strong> Confira se há baseline
+(mesmo que pequeno) e se o risco de manipulação está declarado.</li>
+<li><strong>Entregar — 5min.</strong> Finalize um único registro
+individual de até uma página, usando o template. O canal acadêmico será
+informado pelo professor; este material não presume endereço de
+envio.</li>
+</ol>
+<h2 id="entrega-e-checklist">Entrega e checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Pergunta, decisão, métrica primária,
+guardrail, baseline, período e método, confundidores.</label></li>
+<li><label><input type="checkbox" />Risco de manipulação declarado e
+contramedida.</label></li>
+<li><label><input type="checkbox" />Tarefa recorrente candidata e a
+verificação que ela exigiria (determinística, permissões, orçamento,
+responsável).</label></li>
+<li><label><input type="checkbox" />Um limite da medição e uma condição
+para interromper.</label></li>
+<li><label><input type="checkbox" />Origem e declaração de IA, se
+utilizada.</label></li>
+</ul>
+<p><strong>Critério de conclusão:</strong> outra pessoa consegue ver
+como você saberia se houve ganho e como a automação seria verificada
+antes de agir.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critério AV1</th>
+<th>Peso</th>
+<th>Indicadores deste registro</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicação/decisão</td>
+<td>30%</td>
+<td>Pergunta ligada a uma decisão; tarefa de automação com filtro
+(frequência, verificabilidade, raio de impacto).</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>40%</td>
+<td>Baseline identificado (mesmo em miniatura); guardrail; verificação
+da automação descrita.</td>
+</tr>
+<tr class="odd">
+<td>Limites/alternativa</td>
+<td>30%</td>
+<td>Risco de a métrica virar meta, confundidores, condição para
+interromper ou revisar.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dica:</strong> sem baseline não existe ganho, existe
+impressão. Uma métrica de uso (quantas sugestões aceitas) não é uma
+métrica de valor.</p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>&gt; **RESPOSTA SIMULADA.** Texto construído pelo professor para análise, identificado como simulação. Não é saída real de um modelo e não mede desempenho de nenhuma ferramenta. Quem a usa **não deve declarar ter executado** a tarefa.</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<blockquote>
+<p><strong>RESPOSTA SIMULADA.</strong> Texto construído pelo professor
+para análise, identificado como simulação. Não é saída real de um modelo
+e não mede desempenho de nenhuma ferramenta. Quem a usa <strong>não deve
+declarar ter executado</strong> a tarefa.</p>
+</blockquote>
+<h1 id="bloco-2--rodada-2-com-escopo-simulada">Bloco 2 · Rodada 2, com
+escopo (simulada)</h1>
+<p><strong>Escopo declarado:</strong> objetivo, separar desconto, frete
+e taxa em funções; pode tocar só <code>calculo.py</code>; não pode tocar
+assinatura pública nem outros arquivos; invariantes: golden master
+exato; pronto: verificações e golden verdes; pare e pergunte se achar
+algo que pareça bug.</p>
+<p><strong>Plano do agente (simulado):</strong></p>
+<ol type="1">
+<li>Extrair <code>_aplicar_desconto(total, cupom)</code>.</li>
+<li>Extrair <code>_calcular_frete(total, cupom, uf)</code>.</li>
+<li>Extrair <code>_aplicar_taxa(total, uf)</code>.</li>
+<li>Manter <code>calcular_total</code> com a mesma assinatura, chamando
+as três em ordem.</li>
+<li>Rodar o golden master e as verificações.</li>
+<li><strong>Reportar, sem corrigir,</strong> qualquer divergência com o
+contrato.</li>
+</ol>
+<p><strong>Resumo do diff simulado:</strong> 1 arquivo, +58 e −41
+linhas. Golden master verde.</p>
+<p><strong>Relato do agente (simulado):</strong> "Observei que o limite
+do frete grátis usa <code>&gt; 200</code>, e o contrato R1.3 diz 'maior
+ou igual a R$ 200,00'. <strong>Não alterei</strong>, porque mudaria o
+comportamento."</p>
+<p><strong>Para você analisar:</strong> o que o plano tinha de bom? O
+que você cortaria ou acrescentaria ao plano? O relato final está certo
+em reportar sem corrigir? Onde isso deveria ser registrado?</p>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AV1.2 — Declarar escopo antes de mudar</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<h1 id="av12--declarar-escopo-antes-de-mudar">AV1.2 — Declarar escopo
+antes de mudar</h1>
+<p><strong>Individual — registro consolidado em 35min — B2, 17/10/2026,
+prática 10h10–11h30 (Brasília).</strong> Integra AV1, que vale 20% da
+nota pela média simples dos registros dos blocos com presença. Consulte
+a <a href="../../avaliacao.html">avaliação e rubrica pública</a>.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Quero refatorar <code>calcular_total</code> em duas rodadas, uma sem
+escopo e outra com escopo e plano revisados, e comparar o tamanho do
+diff e o esforço de revisão.</p>
+<h2 id="contexto-e-insumos">Contexto e insumos</h2>
+<p>Arquivo: <code>caso/miniloja/calculo.py</code>. Contrato:
+<strong>R1</strong> (<code>caso/regras.md</code>). A refatoração deve
+<strong>preservar o comportamento</strong>.</p>
+<ul>
+<li><strong>Passo zero:</strong> grave o comportamento atual (golden
+master): uma lista de entradas variadas (carrinhos, cupons
+<code>PROMO10</code>, <code>VIP15</code>, <code>FRETEGRATIS</code>,
+<code>NATAL</code>, inválido, UFs PE, SP, RJ e outra) e as saídas
+atuais, e crie uma comparação com <strong>igualdade exata</strong>, sem
+tolerância.</li>
+<li><strong>Regra de ouro:</strong> se a IA achar algo que pareça bug,
+ela <strong>reporta, não corrige</strong>. Corrigir mistura mudança de
+comportamento com mudança de estrutura.</li>
+<li>Sem ferramenta ou ambiente, analise <a
+href="../../apoio/respostas-simuladas/b2-rodada1-sem-escopo.html">b2-rodada1-sem-escopo.md</a>
+e <a
+href="../../apoio/respostas-simuladas/b2-rodada2-com-escopo.html">b2-rodada2-com-escopo.md</a>
+e identifique-as como simuladas.</li>
+<li><a href="../../caso/regras.html">Contrato</a> · <a
+href="template-registro.html">template individual</a>.</li>
+</ul>
+<p><strong>Os seis campos do escopo:</strong> objetivo · pode tocar ·
+não pode tocar · invariantes · critério de pronto · critério de
+parada.</p>
+<h2 id="passos--35min">Passos — 35min</h2>
+<ol type="1">
+<li><strong>Ler — 5min.</strong> Leia R1 e o código. Escreva o critério
+de pronto antes de pedir qualquer coisa.</li>
+<li><strong>Produzir individualmente — 20min.</strong> <strong>Rodada
+1:</strong> peça ao agente "refatore <code>calcular_total</code>", sem
+declarar escopo; registre linhas e arquivos alterados, o que mudou de
+comportamento (use o golden master) e quanto tempo levou para revisar;
+desfaça tudo. <strong>Rodada 2:</strong> escreva os seis campos, peça o
+<strong>plano</strong>, revise-o antes de executar (corte o que não
+pediu) e execute; registre as mesmas medidas. Escreva um
+<code>AGENTS.md</code> mínimo (5 a 8 linhas: comandos, limites, uma
+convenção não óbvia).</li>
+<li><strong>Revisar pela rubrica — 5min.</strong> Confira se a
+comparação mostra diferença objetiva e se o escopo foi escrito
+<strong>antes</strong>.</li>
+<li><strong>Entregar — 5min.</strong> Finalize um único registro
+individual de até uma página, usando o template. O canal acadêmico será
+informado pelo professor; este material não presume endereço de
+envio.</li>
+</ol>
+<h2 id="entrega-e-checklist">Entrega e checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Golden master descrito (quantas
+entradas, como foi gerado, comparação exata).</label></li>
+<li><label><input type="checkbox" />Rodadas 1 e 2 comparadas com números
+(linhas, arquivos, comportamento, tempo de revisão).</label></li>
+<li><label><input type="checkbox" />Os seis campos do escopo e o que
+você alterou no plano do agente.</label></li>
+<li><label><input type="checkbox" /><code>AGENTS.md</code>
+mínimo.</label></li>
+<li><label><input type="checkbox" />Origem simulada, se usada, e
+declaração de IA.</label></li>
+</ul>
+<p><strong>Critério de conclusão:</strong> outra pessoa consegue ver que
+a rodada 2 teve escopo escrito antes e conferir a diferença de diff e de
+comportamento entre as rodadas.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critério AV1</th>
+<th>Peso</th>
+<th>Indicadores deste registro</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicação/decisão</td>
+<td>30%</td>
+<td>Escopo escrito antes, plano revisado com cortes justificados e uma
+regra de parada.</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>40%</td>
+<td>Números das duas rodadas e o resultado do golden master (comando e
+saída, ou análise declarada).</td>
+</tr>
+<tr class="odd">
+<td>Limites/alternativa</td>
+<td>30%</td>
+<td>Limite do golden master (preserva o comportamento atual, inclusive
+erros) e condição para ampliar ou reduzir o escopo.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dica:</strong> o golden master <strong>preserva o
+erro</strong>. Se você "consertar" algo durante a refatoração, o teste
+vai acusar, e isso é o desejado. Registre o que parecia bug e não
+corrigiu.</p>
+</body>
+</html>

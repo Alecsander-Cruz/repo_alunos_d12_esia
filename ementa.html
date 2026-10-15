@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>D1.2 — Desenvolvimento Assistido por IA</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+<h1 id="d12--desenvolvimento-assistido-por-ia">D1.2 — Desenvolvimento
+Assistido por IA</h1>
+<p>Plano de ensino da turma · CESAR School · Turma 01 · Revisão
+pedagógica: prática individual verificável, caso evolutivo e repositório
+desconhecido. Escopo deste documento: disciplina D1.2, de 24h,
+integrante do módulo institucional M1, de 72h. Os canais de aula, envio
+e acompanhamento de acessibilidade serão comunicados pela
+organização.</p>
+<h2 id="1-ficha-técnica-do-módulo">1. Ficha técnica do módulo</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Campo</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Curso</td>
+<td>Pós-Graduação Lato Sensu em Engenharia de Software e IA — CESAR
+School</td>
+</tr>
+<tr class="even">
+<td>Escopo</td>
+<td>D1.2 — Desenvolvimento Assistido por IA, 24h; integra M1
+institucional, de 72h</td>
+</tr>
+<tr class="odd">
+<td>Professor/turma</td>
+<td>Jamisson Santana de Freitas · Turma 01</td>
+</tr>
+<tr class="even">
+<td>Carga</td>
+<td>18h ao vivo (seis blocos de 180min) + 6h autônomas; hora de
+60min</td>
+</tr>
+<tr class="odd">
+<td>Método</td>
+<td>Exposição aplicada com demonstração, prática individual em código
+que o aluno precisa verificar, socialização de casos</td>
+</tr>
+<tr class="even">
+<td>B1</td>
+<td>16/10/2026, sexta, 19–22h</td>
+</tr>
+<tr class="odd">
+<td>B2/B3</td>
+<td>17/10/2026, sábado, 9–12h e 14–17h</td>
+</tr>
+<tr class="even">
+<td>B4</td>
+<td>23/10/2026, sexta, 19–22h</td>
+</tr>
+<tr class="odd">
+<td>B5/B6</td>
+<td>24/10/2026, sábado, 9–12h e 14–17h</td>
+</tr>
+<tr class="even">
+<td>Público</td>
+<td>42 profissionais de software em atuação; remoto ao vivo; um
+estudante acompanha com intérprete de Libras</td>
+</tr>
+<tr class="odd">
+<td>Pré-requisitos</td>
+<td>Leitura de código e noções de testes e git; instalação local não é
+condição de avaliação</td>
+</tr>
+<tr class="even">
+<td>Ferramentas</td>
+<td>Python e biblioteca padrão para o caso; ao menos um assistente no
+editor e um agente de codificação com acesso a arquivos e terminal, ou o
+caminho textual</td>
+</tr>
+<tr class="odd">
+<td>Alternativa de acesso</td>
+<td>Respostas simuladas identificadas, transcrição de execução e
+inspeção textual; sem API paga obrigatória</td>
+</tr>
+<tr class="even">
+<td>Normas institucionais</td>
+<td>Limite de falta de 25%, gravação após 48h por 90 dias sem gerar
+presença e abono somente pela Secretaria; recuperação, atraso e
+lançamento ainda aguardam confirmação</td>
+</tr>
+</tbody>
+</table>
+<p>Horários de Brasília. Almoço fora da carga; encerramento dos sábados
+às 17h.</p>
+<p>Ementa de referência: leitura de bases de código, planejamento de
+mudanças, modificação de arquivos, geração de testes, refatoração,
+documentação, revisão e automação de tarefas recorrentes, com ênfase em
+fluxos verificáveis, colaborativos e compatíveis com práticas
+profissionais de engenharia.</p>
+<h2 id="2-contexto-a-trilha-completa-do-curso">2. Contexto: a trilha
+completa do curso</h2>
+<p>O curso tem 360h em cinco módulos de 72h: M1 fundamentos e
+desenvolvimento → M2 arquitetura e integração → M3 agentes e automação →
+M4 avaliação, segurança e operação → M5 produto e projeto aplicado.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Disciplina de M1</th>
+<th>Carga</th>
+<th>Contribuição e fronteira</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D1.1 — Engenharia de Software na Era da IA Generativa</td>
+<td>24h</td>
+<td>Decidir quando usar IA, verificar saídas, reconhecer riscos. Já
+estabeleceu a régua de verificação e responsabilidade e a política de
+uso</td>
+</tr>
+<tr class="even">
+<td>D1.2 — Desenvolvimento Assistido por IA</td>
+<td>24h</td>
+<td><strong>Fluência operacional</strong>: escolher o modo, declarar
+escopo, testar de verdade, ler legado, revisar, medir. Aqui a pergunta
+deixa de ser "o que mudou" e passa a ser "como eu faço"</td>
+</tr>
+<tr class="odd">
+<td>D1.3 — Prompting Técnico, Especificação e Contexto</td>
+<td>24h</td>
+<td>Prompt como especificação, critérios de aceite, engenharia de
+contexto e instruções persistentes de projeto</td>
+</tr>
+</tbody>
+</table>
+<p>Aqui o prompt aparece <strong>como meio</strong>. Arquitetura, RAG,
+agentes como componente de produto e avaliação sistemática são de M2, M3
+e M4. O agente é <strong>ferramenta de trabalho do dev</strong>, não
+peça da solução entregue. Subagentes, hooks e orquestração de automações
+pertencem a M3.</p>
+<h2 id="3-filosofia-pedagógica-do-módulo">3. Filosofia pedagógica do
+módulo</h2>
+<p><strong>Método antes de ferramenta.</strong> A maioria da turma já
+usa IA. O que falta é método: escopo declarado, verificação e
+responsabilidade. A disciplina não depende de uma ferramenta específica,
+mas depende da categoria: um assistente no editor e um agente de
+codificação.</p>
+<p><strong>Toda prática roda em código que o aluno precisa verificar
+depois.</strong> É o antídoto contra a disciplina virar demonstração de
+ferramenta. O caso tem dívida plantada em cada ponto trabalhado, e a
+verificação de verdade (teste que falharia) é o critério.</p>
+<p><strong>Ganho real não é ganho percebido.</strong> A evidência
+empírica sobre produtividade é contraditória. O aluno aprende a ler essa
+evidência e a medir o próprio contexto, em vez de repetir número de
+fornecedor.</p>
+<p><strong>Avaliação individual e honesta.</strong> O registro do que a
+IA errou vale mais do que um resultado perfeito. Avaliam-se decisão,
+evidência e argumento próprios; não se avalia presença, câmera,
+quantidade de prompts ou testes verdes.</p>
+<p><strong>Segurança de ambiente.</strong> Nada do empregador em sala.
+Permissões mínimas para agentes, árvore limpa e branch por tarefa são
+parte do método.</p>
+<p><strong>Equidade e carga verificável.</strong> Materiais antecipados,
+instruções escritas, caminho textual com a mesma rubrica. As 6h
+autônomas não pedem pesquisa nem projeto extra.</p>
+<h2 id="4-questões-de-pesquisa-aplicada-por-bloco">4. Questões de
+pesquisa aplicada por bloco</h2>
+<p>Os recortes abaixo são questões para análise, não afirmações sobre
+produtos. A bibliografia básica teve título, autoria e registro
+conferidos; a atualização de 24/02/2026 da METR foi conferida na
+fonte.</p>
+<ul>
+<li><strong>B1 — Modos e ambiente.</strong> O que muda de um modo de
+interação para outro em contexto, verificação e custo? Por que o
+ambiente (arquivos, comandos, permissões) pesa tanto quanto o modelo, e
+que riscos de segurança ele traz?</li>
+<li><strong>B2 — Escopo.</strong> Por que um diff pequeno é decisão de
+engenharia? O que o plano revisado evita?</li>
+<li><strong>B3 — Verificação real.</strong> Que diferença há entre
+cobertura e verificação? Como reconhecer um teste que nunca
+falharia?</li>
+<li><strong>B4 — Legado.</strong> Como acelerar a leitura sem
+terceirizar a conferência? O que é mecânico e o que é decisão humana
+numa migração?</li>
+<li><strong>B5 — Revisão e segurança.</strong> O que o revisor costuma
+deixar passar quando ninguém "pensou" o código linha a linha? Que
+dependências e vetores novos aparecem com agentes?</li>
+<li><strong>B6 — Evidência e adoção.</strong> Por que estudos sérios
+chegam a resultados opostos? O que medir, com que baseline, e quando a
+métrica vira meta?</li>
+</ul>
+<h2 id="5-conceitos-base-glossário-operacional">5. Conceitos-base
+(glossário operacional)</h2>
+<p>Ver o <a href="glossario.html">glossário</a>. Os conceitos que
+sustentam a disciplina: <strong>modo de interação</strong>,
+<strong>escopo declarado</strong>, <strong>plano revisado</strong>,
+<strong>oráculo</strong>, <strong>teste tautológico</strong>,
+<strong>mutação</strong>, <strong>teste de caracterização</strong>,
+<strong>viés de automação</strong>, <strong>baseline</strong> e
+<strong>guardrail</strong>.</p>
+<h2 id="6-pré-requisitos-e-setup">6. Pré-requisitos e setup</h2>
+<ul>
+<li>A organização comunicará sala, ambiente da turma, canal de entrega e
+acompanhamento de acessibilidade quando confirmados.</li>
+<li>Disponibilizar previamente enunciados, glossário, código fictício e
+pacote de contingência; usar fonte legível e descrever o conteúdo
+exibido.</li>
+<li>Não pressupor licença de turma, API, conta ou cota; validar antes do
+encontro. A licença prevista cobre 16/10 a 14/11; aula de reposição fora
+da janela não está coberta.</li>
+<li>Para a execução local, preparar Python 3.11 ou superior e a
+biblioteca padrão; o aluno sem instalação acompanha o mesmo código e
+analisa resultados fornecidos, com origem identificada.</li>
+<li>Não exigir download de modelo local, chave de API, pagamento ou
+dados do empregador.</li>
+</ul>
+<p><strong>Smoke test de preparação:</strong> abrir o pacote; registrar
+<code>python --version</code>; rodar
+<code>python -B testes/test_miniloja.py --codigo caso</code> (esperado:
+onze verificações, oito passam e três falham, código de saída
+<code>1</code>); rodar <code>--existentes</code> (esperado: 26 testes,
+OK). Se não houver ambiente, abrir
+<code>apoio/resultado-textual.md</code> e registrar a modalidade.</p>
+<p><strong>Contingência equivalente:</strong> o pacote textual contém
+todos os insumos, respostas simuladas rotuladas e transcrições de
+execução. Quem o utiliza analisa critérios, limites e decisões com a
+mesma rubrica, e <strong>não declara ter feito execuções ou medições que
+não executou</strong>.</p>
+<h2 id="7-mapa-de-competências-e-instrumentos">7. Mapa de competências e
+instrumentos</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Objetivo</th>
+<th>Desempenho esperado</th>
+<th>Instrumentos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>O1 — Escolher o modo</td>
+<td>Escolher e justificar o modo de interação para uma tarefa
+concreta</td>
+<td>AV1.1, AV3</td>
+</tr>
+<tr class="even">
+<td>O2 — Conduzir com escopo</td>
+<td>Gerar e refatorar com plano revisado, escopo declarado, mudança
+pequena e resultado verificável</td>
+<td>AV1.2, AV2</td>
+</tr>
+<tr class="odd">
+<td>O3 — Testes e documentação</td>
+<td>Produzir testes e documentação que acrescentem verificação real;
+reconhecer teste tautológico, cobertura enganosa e documentação
+óbvia</td>
+<td>AV1.3, AV2</td>
+</tr>
+<tr class="even">
+<td>O4 — Ler legado</td>
+<td>Verificar no código toda afirmação do assistente antes de agir</td>
+<td>AV1.4</td>
+</tr>
+<tr class="odd">
+<td>O5 — Revisar</td>
+<td>Revisar código assistido (correção, segurança, dependências, dívida)
+e sustentar o que aprova e rejeita</td>
+<td>AV1.5, AV3</td>
+</tr>
+<tr class="even">
+<td>O6 — Medir e automatizar</td>
+<td>Ler evidência de produtividade, propor medição honesta e identificar
+tarefa recorrente a automatizar com verificação</td>
+<td>AV1.6, AV3</td>
+</tr>
+</tbody>
+</table>
+<p>Fluência em um fornecedor específico não é competência avaliada. A
+precisão do argumento e a capacidade de auditar sua evidência determinam
+o nível da rubrica.</p>
+<h2 id="8-plano-de-aulas-detalhado">8. Plano de aulas detalhado</h2>
+<p>Cada bloco tem 180min, com divisão sugerida de cerca de 60min de
+exposição aplicada, 80–90min de prática e 30min de fechamento. O
+professor ajusta. O bloco 1 reserva 20–30min iniciais ao nivelamento de
+ambiente.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Etapa</th>
+<th>B1</th>
+<th>B2–B6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abertura e nivelamento de ambiente</td>
+<td>25min</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>Exposição aplicada (com demonstração)</td>
+<td>55min</td>
+<td>60min</td>
+</tr>
+<tr class="odd">
+<td>Pausa</td>
+<td>10min</td>
+<td>10min</td>
+</tr>
+<tr class="even">
+<td>Prática individual em salas (inclui transições de 5–8min)</td>
+<td>65min</td>
+<td>80min</td>
+</tr>
+<tr class="odd">
+<td>Socialização de 3–5 casos e fechamento</td>
+<td>25min</td>
+<td>30min</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>180min</strong></td>
+<td><strong>180min</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="b1--ferramentas-modos-de-interação-e-onde-cada-um-entra">B1 —
+Ferramentas, modos de interação e onde cada um entra</h3>
+<p><strong>16/10, 19–22h.</strong> Completar, conversar, editar com
+escopo e delegar a um agente, com o que cada modo pede de contexto e de
+verificação; o ambiente em volta do modelo (arquivos, comandos,
+permissões) e a segurança de agentes; MCP e seus riscos; custo cognitivo
+de revisar mudança grande; critério por tipo de tarefa e maturidade do
+código. <strong>Prática (AV1.1):</strong> a mesma tarefa pequena do
+MiniLoja em dois modos, com registro de tempo, idas e vindas e correção.
+<strong>Fechamento:</strong> o modo errado custa mais do que não usar
+IA.</p>
+<h3 id="b2--geração-edição-e-refatoração-com-escopo">B2 — Geração,
+edição e refatoração com escopo</h3>
+<p><strong>17/10, 9–12h.</strong> Escopo declarado em seis campos; plano
+revisado como código; escada do raio de impacto; diff pequeno;
+refatoração com comportamento preservado (golden master); quando o
+agente insiste em reescrever; git como rede de segurança; regras
+persistentes mínimas. <strong>Prática (AV1.2):</strong> refatorar
+<code>calcular_total</code> em duas rodadas (sem e com escopo).
+<strong>Fechamento:</strong> escopo declarado antes separa refatoração
+de reescrita acidental.</p>
+<h3 id="b3--testes-e-documentação-assistidos">B3 — Testes e documentação
+assistidos</h3>
+<p><strong>17/10, 14–17h.</strong> Teste como rede e como oráculo do
+agente; pedir teste de comportamento; teste tautológico; cobertura ×
+mutação; teste diferencial; documentação útil; ADR com apoio de IA.
+<strong>Prática (AV1.3):</strong> cobrir o código refatorado, caçar na
+suíte existente o teste que só repete a implementação, derivar casos do
+contrato. <strong>Fechamento:</strong> teste gerado que não falharia
+nunca não é teste, é enfeite.</p>
+<h3 id="b4--legado-leitura-navegação-e-mudança-segura">B4 — Legado:
+leitura, navegação e mudança segura</h3>
+<p><strong>23/10, 19–22h.</strong> Leitura assistida de base grande;
+pedir mapa com evidência; protocolo afirmação → prova; rede de segurança
+antes de mudar; migração em escala (codemod × IA × humano).
+<strong>Prática (AV1.4):</strong> em um repositório desconhecido, cinco
+perguntas de arquitetura provadas com trecho de código e um plano de
+migração. <strong>Fechamento:</strong> em legado, a IA acelera a leitura
+e não substitui a conferência.</p>
+<h3 id="b5--revisão-segurança-e-dívida-do-código-assistido">B5 —
+Revisão, segurança e dívida do código assistido</h3>
+<p><strong>24/10, 9–12h.</strong> O que muda no review quando ninguém
+pensou o código linha a linha; vulnerabilidades recorrentes; falsa
+sensação de segurança; dependências e cadeia de suprimentos; duplicação
+e dívida; o que exigir de um PR de agente. <strong>Prática
+(AV1.5):</strong> checklist em plenária e parecer de revisão de um pull
+request gerado por agente. <strong>Fechamento:</strong> quem aprova o
+merge responde pelo código.</p>
+<h3 id="b6--produtividade-real-medição-e-uso-em-time">B6 — Produtividade
+real, medição e uso em time</h3>
+<p><strong>24/10, 14–17h.</strong> Por que os estudos divergem; o que
+medir (DORA, SPACE) e baseline; métrica que vira meta; combinado de
+time; automação de tarefa recorrente com verificação; ponte para D1.3.
+<strong>Prática (AV1.6):</strong> desenhar uma medição para o próprio
+time e apontar uma tarefa candidata a automação.
+<strong>Fechamento:</strong> sem baseline não existe ganho, existe
+impressão.</p>
+<h2 id="9-projeto-integrador-do-módulo">9. Projeto integrador do
+módulo</h2>
+<p>O caso transversal <strong>MiniLoja</strong> sustenta as práticas dos
+blocos 1 a 3 e 5; o <strong>repositório desconhecido</strong> do bloco 4
+aplica as mesmas habilidades a um legado; o bloco 6 mede e decide. O
+produto integrador é a <strong>AV3, entrega final</strong>: um pull
+request assistido com registro do que a IA errou e a medição
+desenhada.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Trabalho autônomo</th>
+<th>Carga</th>
+<th>Entrega</th>
+<th>Prazo proposto, Brasília</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L0 — leitura orientada</td>
+<td>2h</td>
+<td>Fichamento de duas referências, formativo</td>
+<td>21/10/2026, 23h59</td>
+</tr>
+<tr class="even">
+<td>AV2 — refatoração e testes</td>
+<td>2h</td>
+<td>Refatoração e suíte verificáveis, com registro</td>
+<td>21/10/2026, 23h59</td>
+</tr>
+<tr class="odd">
+<td>AV3 — entrega final</td>
+<td>2h</td>
+<td>PR assistido + registro de erros da IA + meia página de medição</td>
+<td>30/10/2026, 23h59</td>
+</tr>
+</tbody>
+</table>
+<p>O <a href="avaliacoes/README.html">índice de avaliações</a> reúne
+enunciados e modelos; o <a href="estudo-autonomo.html">estudo autônomo</a>
+delimita esforço e procedência.</p>
+<h2 id="10-avaliação-e-rubricas">10. Avaliação e rubricas</h2>
+<p><strong>AV1 20% + AV2 30% + AV3 50%.</strong> AV1 é a média dos
+registros dos blocos com presença registrada. Todas as notas estão entre
+0 e 10. L0 é formativa e não acrescenta peso. <strong>Pesos e prazos são
+proposta docente, sujeitos a confirmação da coordenação.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Instrumento</th>
+<th>Critérios internos, soma 100%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AV1, cada registro</td>
+<td>Aplicação/decisão 30%; evidência 40%; limites/alternativa 30%</td>
+</tr>
+<tr class="even">
+<td>AV2</td>
+<td>Escopo e plano 20%; comportamento preservado 25%; suíte com
+verificação real 35%; documentação e ADR 20%</td>
+</tr>
+<tr class="odd">
+<td>AV3</td>
+<td>Modo e justificativa 10%; escopo declarado e cumprido 15%; mudança
+revisável 15%; verificação efetiva 20%; honestidade sobre os erros da IA
+15%; justificativa técnica das correções 10%; medição e automação
+15%</td>
+</tr>
+</tbody>
+</table>
+<p>Níveis por critério: 0 ausente, 1 incipiente, 2 adequado, 3
+consistente. Nota = 10 × soma(peso × nível/3); todos os níveis 2
+produzem 6,67. As <a href="avaliacao.html">rubricas públicas completas</a>
+descrevem os níveis, a fórmula, a regra de presença e a devolutiva.</p>
+<p>IA é permitida com declaração e julgamento próprios. Execução e
+inspeção textual são modalidades válidas; a origem do resultado deve
+estar clara. A avaliação é manual.</p>
+<p><strong>Presença, frequência e gravações:</strong> limite de falta de
+<strong>25% da carga de 24h (6h)</strong>; acima disso, reprovação por
+falta, independentemente da nota. Gravações liberadas <strong>48h após a
+aula</strong>, disponíveis por <strong>90 dias</strong>, só para
+revisão; <strong>não geram presença</strong>. Abono de falta é
+atribuição exclusiva da <strong>Secretaria, mediante
+comprovante</strong>. A regra para quem faltar a um bloco com registro
+avaliado e a recuperação aguardam confirmação (o PPC prevê nova
+avaliação em até 5 dias úteis para falta justificada e comprovada, a
+pedido do aluno).</p>
+<h2 id="11-repositório-de-apoio">11. Repositório de apoio</h2>
+<p>O <a href="README.html">material do aluno</a> contém contrato, dados
+sintéticos, código, onze verificações, a suíte existente, mutação,
+respostas simuladas, transcrição de execução e dossiês de avaliação. O
+material inicial tem <strong>três verificações que falham</strong> (as
+tarefas do bloco 1). A suíte existente passa por inteiro e
+<strong>contém dívida de propósito</strong>: descobri-la faz parte da
+prática.</p>
+<p>Duas pastas são liberadas pelo professor no dia do bloco:
+<code>caso/legado/</code> (B4) e <code>apoio/pr-bloco5/</code> (B5).</p>
+<h2 id="12-referências-e-fontes">12. Referências e fontes</h2>
+<p><strong>Bibliografia básica</strong></p>
+<ul>
+<li>LIANG, Jenny T.; YANG, Chenyang; MYERS, Brad A. <em>A Large-Scale
+Survey on the Usability of AI Programming Assistants: Successes and
+Challenges</em>. arXiv, 2023. <a
+href="https://arxiv.org/abs/2303.17125">https://arxiv.org/abs/2303.17125</a></li>
+<li>BECKER, Joel et al. <em>Measuring the Impact of Early-2025 AI on
+Experienced Open-Source Developer Productivity</em>. arXiv, 2025. <a
+href="https://arxiv.org/abs/2507.09089">https://arxiv.org/abs/2507.09089</a>
+(ler com a atualização da METR de 24/02/2026)</li>
+<li>PERRY, Neil et al. <em>Do Users Write More Insecure Code with AI
+Assistants?</em> arXiv, 2022. <a
+href="https://arxiv.org/abs/2211.03622">https://arxiv.org/abs/2211.03622</a></li>
+</ul>
+<p><strong>Complementar</strong></p>
+<ul>
+<li>PENG, Sida et al. <em>The Impact of AI on Developer Productivity:
+Evidence from GitHub Copilot</em>. arXiv, 2023. <a
+href="https://arxiv.org/abs/2302.06590">https://arxiv.org/abs/2302.06590</a></li>
+<li>YANG, John et al. <em>SWE-agent: Agent-Computer Interfaces Enable
+Automated Software Engineering</em>. arXiv, 2024. <a
+href="https://arxiv.org/abs/2405.15793">https://arxiv.org/abs/2405.15793</a></li>
+<li>WANG, Junjie et al. <em>Software Testing with Large Language Models:
+Survey, Landscape, and Vision</em>. arXiv, 2023. <a
+href="https://arxiv.org/abs/2307.07221">https://arxiv.org/abs/2307.07221</a></li>
+<li>NIKOLOV, Stoyan et al. <em>How is Google using AI for internal code
+migrations?</em> arXiv, 2025. <a
+href="https://arxiv.org/abs/2501.06972">https://arxiv.org/abs/2501.06972</a></li>
+<li>PEARCE, Hammond et al. <em>Asleep at the Keyboard? Assessing the
+Security of GitHub Copilot's Code Contributions</em>. arXiv, 2021. <a
+href="https://arxiv.org/abs/2108.09293">https://arxiv.org/abs/2108.09293</a></li>
+<li>DORA. <em>State of AI-assisted Software Development</em>. Google
+Cloud, 2025. <a
+href="https://dora.dev/dora-report-2025/">https://dora.dev/dora-report-2025/</a></li>
+</ul>
+<p><strong>Referência operacional:</strong> documentação oficial do
+Python (biblioteca padrão e <code>unittest</code>). O runtime de
+referência é o local do aluno; nenhum fornecedor de IA integra o
+contrato pedagógico.</p>
+<h2 id="13-apêndices-templates-e-checklists">13. Apêndices: templates e
+checklists</h2>
+<p><strong>Registro de avaliação:</strong> identificação; instrumento;
+insumo/versão; critério; método; entrada; esperado; encontrado; decisão;
+alternativa; limite; procedência e assistência. Preencher só os campos
+pertinentes ao enunciado.</p>
+<p><strong>AV1:</strong> um registro individual até uma página por
+bloco. <strong>AV2:</strong> escopo → plano → mudança → verificação
+(teste que falharia) → decisão. <strong>AV3:</strong> PR com escopo,
+evidência e registro de erros da IA, mais meia página de medição.</p>
+<p><strong>Checklist do estudante:</strong> usar apenas insumos
+autorizados; aplicar ao caso; identificar fonte e método; separar
+esperado e encontrado; não atribuir execução à inspeção; justificar a
+decisão; examinar limite e alternativa; declarar assistência; revisar
+pela rubrica e entregar no canal institucional.</p>
+<p><strong>Ficha docente de correção:</strong> critério | peso | nível
+0–3 | evidência localizada | comentário. Com 42 trabalhos, corrigir por
+rubrica de níveis, sem comentário longo em cada um.</p>
+</body>
+</html>

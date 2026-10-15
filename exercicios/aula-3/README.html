@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AV1.3 — Testes que falhariam</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../estilo.css" />
+</head>
+<body>
+<h1 id="av13--testes-que-falhariam">AV1.3 — Testes que falhariam</h1>
+<p><strong>Individual — registro consolidado em 35min — B3, 17/10/2026,
+prática 15h10–16h30 (Brasília).</strong> Integra AV1, que vale 20% da
+nota pela média simples dos registros dos blocos com presença. Consulte
+a <a href="../../avaliacao.html">avaliação e rubrica pública</a>.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Quero distinguir teste que verifica de teste que só repete a
+implementação, tratar mutantes que sobrevivem e derivar casos de teste
+do contrato, e não do código.</p>
+<h2 id="contexto-e-insumos">Contexto e insumos</h2>
+<p>Insumos: a suíte existente em <code>caso/testes_existentes/</code>
+(26 testes, que <strong>passam</strong>), o código refatorado (ou o
+original) e o contrato <strong>R1</strong> e <strong>R2</strong> em
+<code>caso/regras.md</code>. <a
+href="../../apoio/execucao-acompanhada-b3.html">Execução acompanhada</a>
+(passo a passo) · <a href="template-registro.html">template
+individual</a>.</p>
+<ul>
+<li><strong>Sabotagem:</strong> quebre o código de propósito (inverta um
+<code>if</code>, troque <code>*</code> por <code>+</code>, devolva uma
+constante) e rode a suíte. Se continuar verde, o teste é suspeito.</li>
+<li><strong>Mutação:</strong>
+<code>python -B testes/mutacao_manual.py</code> injeta 31 falhas
+pequenas e lista as que <strong>sobrevivem</strong>. Sem ambiente, use a
+transcrição em <a
+href="../../apoio/resultado-textual.html">apoio/resultado-textual.md</a>.</li>
+<li><strong>Derivar do contrato:</strong> o "esperado" vem de
+<code>regras.md</code>, calculado à mão. Se o código discordar, não
+"conserte o teste para passar": decida se o código ou a leitura do
+contrato está errada.</li>
+<li>Tipos de teste tautológico: espelho (recalcula a fórmula), afirma o
+mock, sem asserção real, snapshot do próprio código, super-mockado,
+passa com o corpo esvaziado.</li>
+</ul>
+<h2 id="passos--35min">Passos — 35min</h2>
+<ol type="1">
+<li><strong>Ler — 5min.</strong> Leia R1 e R2. Defina, antes de rodar
+qualquer coisa, o que seria um teste que <strong>falharia</strong> para
+um erro real.</li>
+<li><strong>Produzir individualmente — 20min.</strong>
+<strong>(a)</strong> Escolha <strong>3 testes</strong> da suíte
+existente que você suspeita serem tautológicos; classifique-os e mostre
+a sabotagem (ou o raciocínio) que o prova. <strong>(b)</strong> Escolha
+<strong>2 mutantes sobreviventes</strong> e escreva o teste que o
+mataria. <strong>(c)</strong> Derive <strong>3 casos do
+contrato</strong> (inclua ao menos um na fronteira do frete grátis e um
+em que o arredondamento importe), calcule o esperado à mão e compare com
+o código. <strong>(d)</strong> Se houver divergência, decida qual lado
+está errado e escreva um ADR de 4 linhas (contexto, decisão,
+consequências, alternativa).</li>
+<li><strong>Revisar pela rubrica — 5min.</strong> Confira se cada
+afirmação tem uma sabotagem ou um cálculo que outra pessoa consegue
+repetir.</li>
+<li><strong>Entregar — 5min.</strong> Finalize um único registro
+individual de até uma página, usando o template. O canal acadêmico será
+informado pelo professor; este material não presume endereço de
+envio.</li>
+</ol>
+<h2 id="entrega-e-checklist">Entrega e checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Três testes classificados, com
+sabotagem ou raciocínio.</label></li>
+<li><label><input type="checkbox" />Dois mutantes tratados, com o teste
+proposto (ou justificativa de equivalente).</label></li>
+<li><label><input type="checkbox" />Três casos derivados do contrato:
+entrada, esperado calculado, observado, decisão.</label></li>
+<li><label><input type="checkbox" />ADR curto, com contexto
+real.</label></li>
+<li><label><input type="checkbox" />Origem e declaração de IA, se
+utilizada.</label></li>
+</ul>
+<p><strong>Critério de conclusão:</strong> outra pessoa consegue repetir
+a sabotagem ou o cálculo e chegar à mesma conclusão. A decisão de quem
+está errado (código ou leitura do contrato) está justificada.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critério AV1</th>
+<th>Peso</th>
+<th>Indicadores deste registro</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aplicação/decisão</td>
+<td>30%</td>
+<td>Classificação correta dos testes; decisão fundamentada sobre
+divergências; ADR ligado ao que você observou.</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>40%</td>
+<td>Sabotagem/mutante verificável; esperado calculado à mão a partir do
+contrato; comando e saída (ou análise declarada).</td>
+</tr>
+<tr class="odd">
+<td>Limites/alternativa</td>
+<td>30%</td>
+<td>Limite do que a suíte garante mesmo depois dos novos testes; mutante
+equivalente identificado e justificado; condição para rever o ADR.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dica:</strong> nunca altere o esperado para o valor que o
+código devolve. Se o esperado vem do código, o teste é espelho. Se a IA
+propuser um teste que passa de primeira, desconfie.</p>
+</body>
+</html>

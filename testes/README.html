@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Verificações do caso</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../estilo.css" />
+</head>
+<body>
+<h1 id="verificações-do-caso">Verificações do caso</h1>
+<p>As onze verificações usam <code>unittest</code> e a biblioteca padrão
+do Python (<strong>3.11 ou superior</strong>; verificado com 3.12.3).
+Execute os comandos a partir da raiz do pacote, onde está o
+<code>README.md</code> principal.</p>
+<pre><code>python -B testes/test_miniloja.py --codigo caso</code></pre>
+<p><code>--codigo</code> recebe a pasta que contém o pacote
+<code>miniloja</code>. Pode apontar para uma <strong>cópia de
+trabalho</strong>; quando omitido, usa <code>caso</code>. A opção
+<code>-B</code> evita arquivos auxiliares de cache.</p>
+<p>Para selecionar uma verificação pelo nome de comportamento:</p>
+<pre><code>python -B testes/test_miniloja.py --codigo caso --teste TestMiniLoja.test_v08_cpf_com_digito_verificador_errado</code></pre>
+<p>Para rodar a <strong>suíte existente do caso</strong> (26 testes, em
+<code>caso/testes_existentes/</code>) em vez das verificações:</p>
+<pre><code>python -B testes/test_miniloja.py --codigo caso --existentes</code></pre>
+<p>Para a <strong>mutação mínima</strong> (31 falhas injetadas na suíte
+existente, só biblioteca padrão):</p>
+<pre><code>python -B testes/mutacao_manual.py
+python -B testes/mutacao_manual.py calculo.py estoque.py     # só alguns arquivos</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th>Regra</th>
+<th>Cobertura</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R1</td>
+<td>Total simples, cupom <code>PROMO10</code>, cupom
+<code>FRETEGRATIS</code> e pedido bem acima de R$ 200,00 (v01 a
+v04)</td>
+</tr>
+<tr class="even">
+<td>R2</td>
+<td>Pedido sem itens e estoque insuficiente (v05 e v06)</td>
+</tr>
+<tr class="odd">
+<td>R3</td>
+<td>CPF válido, dígito verificador errado, dígitos iguais, resposta
+<code>422</code> com a lista de todos os erros e cadastro válido (v07 a
+v11)</td>
+</tr>
+<tr class="even">
+<td>R4</td>
+<td><strong>Revisão humana</strong>, não automatizada por esta
+suíte</td>
+</tr>
+</tbody>
+</table>
+<p>No material inicial, <strong>oito verificações passam e três
+falham</strong> (v08, v09 e v10, as tarefas do bloco 1). <code>ok</code>
+indica verificação satisfeita; <code>FAIL</code> indica divergência da
+expectativa e <code>ERROR</code> indica impedimento para executar. O
+processo retorna <code>0</code> quando o conjunto executado passa e
+<code>1</code> se há falha ou erro.</p>
+<p>A suíte existente passa por inteiro, mas <strong>passar não é estar
+certo</strong>: ela contém dívida de propósito. A saída é evidência
+sobre este material, não nota de aluno. Sucesso nos testes não demonstra
+segurança completa, qualidade geral ou produtividade da IA. Não se
+verifica comportamento de um modelo de linguagem. A transcrição
+acessível está em <a
+href="../apoio/resultado-textual.html">resultado-textual.md</a>.</p>
+<p><strong>Não altere os arquivos desta pasta.</strong> Se um teste
+precisa mudar, mude o seu, em uma cópia, e registre o motivo.</p>
+</body>
+</html>

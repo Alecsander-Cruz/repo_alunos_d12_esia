@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Como fazer e entregar os exercícios dos blocos</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../estilo.css" />
+</head>
+<body>
+<h1 id="como-fazer-e-entregar-os-exercícios-dos-blocos">Como fazer e
+entregar os exercícios dos blocos</h1>
+<p>Cada bloco tem uma atividade individual da AV1. Você lê a situação,
+trabalha no caso (executando, ou analisando as respostas simuladas) e
+registra suas respostas em <strong>um único documento de até uma página
+por bloco</strong>, incluindo a evidência pedida. A evidência faz parte
+da resposta; não é uma segunda entrega.</p>
+<h2 id="por-onde-começar">Por onde começar</h2>
+<ol type="1">
+<li>Abra o enunciado do bloco na tabela abaixo. Os exercícios ficam em
+<code>exercicios/aula-1/</code> a <code>exercicios/aula-6/</code>, a
+partir da raiz do pacote. A pasta <code>avaliacoes/</code> reúne o
+índice geral, a AV2 e a AV3.</li>
+<li>Leia a situação e as regras indicadas. "Contrato" significa o
+documento que define como o sistema fictício MiniLoja deve funcionar
+(<code>caso/regras.md</code>).</li>
+<li>Faça uma cópia do <code>template-registro.md</code> do bloco. Esse é
+o modelo de resposta: preencha as tabelas e substitua os espaços
+<code>___</code> pelo seu texto. Você também pode copiar o conteúdo para
+um editor de texto, mantendo os campos pedidos.</li>
+<li>Siga as etapas do enunciado e registre suas justificativas no
+próprio modelo. Use frases curtas.</li>
+<li>Confira o checklist e o limite de uma página. Envie o documento
+preenchido pelo canal e no formato informados pelo professor. O
+repositório não recebe nem envia sua atividade automaticamente.</li>
+</ol>
+<p><strong>Sobre os arquivos:</strong> o <code>README.md</code> contém o
+enunciado e o <code>template-registro.md</code> contém os campos da
+resposta. As versões <code>.html</code> servem para leitura no navegador
+e não são formulários. Você não precisa editar o HTML, preencher as duas
+versões, criar fork nem enviar commit.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Bloco</th>
+<th>O que você vai fazer</th>
+<th>Modelo de resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="aula-1/README.html">1 — Escolher o modo</a></td>
+<td>Resolver a mesma tarefa em dois modos de interação e decidir o modo
+de uma terceira</td>
+<td><a href="aula-1/template-registro.html">Preencher AV1.1</a></td>
+</tr>
+<tr class="even">
+<td><a href="aula-2/README.html">2 — Declarar escopo</a></td>
+<td>Refatorar <code>calcular_total</code> sem e com escopo declarado e
+comparar</td>
+<td><a href="aula-2/template-registro.html">Preencher AV1.2</a></td>
+</tr>
+<tr class="odd">
+<td><a href="aula-3/README.html">3 — Testes que falhariam</a></td>
+<td>Caçar testes tautológicos, tratar mutantes e derivar casos do
+contrato</td>
+<td><a href="aula-3/template-registro.html">Preencher AV1.3</a></td>
+</tr>
+<tr class="even">
+<td><a href="aula-4/README.html">4 — Ler legado com prova</a></td>
+<td>Responder cinco perguntas sobre um código desconhecido, provando
+cada uma</td>
+<td><a href="aula-4/template-registro.html">Preencher AV1.4</a></td>
+</tr>
+<tr class="odd">
+<td><a href="aula-5/README.html">5 — Revisar PR de agente</a></td>
+<td>Revisar um pull request gerado por agente e decidir o merge</td>
+<td><a href="aula-5/template-registro.html">Preencher AV1.5</a></td>
+</tr>
+<tr class="even">
+<td><a href="aula-6/README.html">6 — Medir e automatizar</a></td>
+<td>Desenhar uma medição honesta e apontar uma tarefa a automatizar com
+verificação</td>
+<td><a href="aula-6/template-registro.html">Preencher AV1.6</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="o-que-significa-evidência-nestas-atividades">O que significa
+"evidência" nestas atividades</h2>
+<p>É a parte da resposta que permite a outra pessoa conferir sua
+conclusão. Em vez de escrever apenas "está correto", mostre a regra
+usada, o comando executado ou o trecho analisado e a comparação que você
+fez. <strong>Um comando com a saída relevante, um cálculo explicado ou
+um trecho de código com arquivo e linha, acompanhado de justificativa,
+pode ser a evidência.</strong> Não é obrigatório produzir print, vídeo
+ou a conversa completa com a IA.</p>
+<p>Exemplo de formato, com valores diferentes dos que você analisa nos
+blocos:</p>
+<blockquote>
+<p>Regra: R1.4 manda aplicar a taxa de serviço sobre subtotal com
+desconto mais frete. Entrada: 1 item de R$ 60,00, UF "XX", sem cupom.
+Cálculo: 60,00 + 29,90 = 89,90; 89,90 × 1,08 = 97,092; arredondado,
+97,09. Origem: cálculo manual a partir do contrato; executei o código e
+observei 97.09 com
+<code>python -B testes/test_miniloja.py --codigo caso</code>. Esse caso
+confere uma combinação, mas não prova o comportamento para todas as
+entradas.</p>
+</blockquote>
+<table>
+<thead>
+<tr class="header">
+<th>Expressão do enunciado</th>
+<th>O que escrever</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Critério de aceite</td>
+<td>A condição que precisa ser atendida para considerar o resultado
+adequado. Ex.: "CPF com dígito verificador errado deve responder
+422"</td>
+</tr>
+<tr class="even">
+<td>Saída esperada</td>
+<td>O resultado que o contrato determina, calculado por você. Isso não
+significa que o código foi executado</td>
+</tr>
+<tr class="odd">
+<td>Resultado inferido por inspeção</td>
+<td>O que você deduziu ao ler o código, explicando o caminho
+seguido</td>
+</tr>
+<tr class="even">
+<td>Resultado observado em execução</td>
+<td>O que você obteve ao realmente rodar. Registre o comando e o trecho
+relevante da saída</td>
+</tr>
+<tr class="odd">
+<td>Trecho essencial de evidência</td>
+<td>Somente os dados, comandos, cálculos ou linhas necessários para
+conferir sua justificativa</td>
+</tr>
+<tr class="even">
+<td>Procedência</td>
+<td>De onde vieram os dados: contrato fictício, cálculo próprio, leitura
+de código, execução própria ou resposta simulada</td>
+</tr>
+<tr class="odd">
+<td>Limite da análise</td>
+<td>O que a sua verificação ainda não permite concluir</td>
+</tr>
+<tr class="even">
+<td>Condição para rever a decisão</td>
+<td>Uma informação nova ou um resultado que faria você mudar de
+ideia</td>
+</tr>
+</tbody>
+</table>
+<p>Os dados fornecidos são fictícios. Se não executou nada, escreva
+"análise manual; execução não realizada". Se usou uma resposta simulada
+de <code>apoio/respostas-simuladas/</code>, <strong>identifique-a como
+simulada</strong>: ela não é uma execução sua.</p>
+<h2 id="preciso-usar-ia-ou-programar">Preciso usar IA ou programar?</h2>
+<p>As seis atividades podem ser resolvidas por escrito com os materiais
+fornecidos. Quem executa as práticas com ferramenta de IA e código segue
+os mesmos critérios que quem usa o caminho textual. São duas informações
+diferentes: a <strong>modalidade que você recomenda</strong> para a
+situação e a <strong>assistência que você efetivamente usou</strong> ao
+preparar seu registro.</p>
+<p>Ao final, escreva <strong>"Não utilizei IA para elaborar este
+registro"</strong> ou informe ferramenta/modelo visível, tarefa e
+contexto fornecidos, trecho aproveitado e como você o conferiu. Se o
+modelo não estiver identificado, escreva "não informado". <strong>Se a
+prática usou IA sobre o código, registre também o que ela
+errou.</strong> Utilize apenas os dados fictícios fornecidos.</p>
+<h2 id="entrega-e-avaliação">Entrega e avaliação</h2>
+<p>O checklist é uma conferência final do documento; cada item não
+corresponde a um arquivo separado. O registro é produzido ao longo da
+prática do bloco e consolidado nos 35min finais: 5 de leitura do
+enunciado, 20 de elaboração, 5 de revisão e 5 de entrega. Horários,
+pesos e critérios estão no <a href="../avaliacoes/README.html">índice das
+avaliações</a> e na <a href="../avaliacao.html">rubrica da disciplina</a>.
+Os enunciados da <a href="../avaliacoes/av2/README.html">AV2</a> e da <a
+href="../avaliacoes/av3/README.html">AV3</a> têm entregas e limites
+próprios; o limite de uma página deste guia se aplica à AV1.</p>
+</body>
+</html>
