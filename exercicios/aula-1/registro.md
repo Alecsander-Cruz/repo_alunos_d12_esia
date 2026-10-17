@@ -5,7 +5,7 @@ Origem: tarefas T1–T3 fictícias do enunciado; modalidade: **execução própr
 
 | Tarefa | Modo | Tempo até 1ª versão | Tempo até pronto e verificado | Idas e vindas | % corrigido à mão | O que a IA errou | Como verifiquei |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T1 | A: Chat (1º) — tarefa pequena e conhecida; comparar tempo até verificado entre modos |  |  |  |  |  | Aceite (R3.2): v08 e v09 passam (rejeita DV inválido e dígitos iguais); CPF válido aceito com e sem pontuação; v01–v07 e v11 seguem passando |
+| T1 | A: Chat (1º) — tarefa pequena e conhecida; comparar tempo até verificado entre modos |  |  |  |  |  | Aceite (R3.2): v08 e v09 passam (rejeita DV inválido e dígitos iguais); CPF válido aceito com e sem pontuação; v01–v07 e v11 seguem passando; suíte `--existentes` (26) passa |
 | T1 | B: Agente (2º) |  |  |  |  |  | Mesmo aceite do modo A |
 | T2 | Agente — escopo definido, mudança em vários trechos e em testes existentes; v10 + suíte como oráculo |  |  |  |  |  | Aceite (R3.4): inválido → 422 com `{"erros": [{"campo", "erro"}]}`, um item por erro detectado; válido segue 201; v01–v11 passam; testes existentes que esperavam 400 ajustados para 422, com motivo registrado |
 
