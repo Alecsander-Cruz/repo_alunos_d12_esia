@@ -5,7 +5,7 @@ Origem: tarefas T1–T3 fictícias do enunciado; modalidade: **execução própr
 
 | Tarefa | Modo | Tempo até 1ª versão | Tempo até pronto e verificado | Idas e vindas | % corrigido à mão | O que a IA errou | Como verifiquei |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T1 | A: Chat (1º) — tarefa pequena e conhecida; comparar tempo até verificado entre modos |  |  |  |  |  | Aceite (R3.2): v08 e v09 passam (rejeita DV inválido e dígitos iguais); CPF válido aceito com e sem pontuação; v01–v07 e v11 seguem passando; suíte `--existentes` (26) passa |
+| T1 | A: Chat (1º) — tarefa pequena e conhecida; comparar tempo até verificado entre modos | ~6 min (00:01→00:07) | ~19 min (→00:20) | 0 (1 pedido; código colado como veio) | 0% | Nenhum erro no escopo. Manteve o CPF opcional (`if "cpf" in payload`): escolha aceitável, pois T1 trata só da R3.2 (validade); a obrigatoriedade (R3.1) fica para T2, junto com `nome` e `email` | Aceite (R3.2): v08 e v09 passam (rejeita DV inválido e dígitos iguais); CPF válido aceito com e sem pontuação; v01–v07 e v11 seguem passando; suíte `--existentes` (26) passa. Resultado: v01–v09 e v11 ok (v10 é T2); existentes 26/26 ok; `_cpf_valido` testada à mão com 4 válidos e 4 inválidos, com/sem pontuação → todos corretos (comando sugerido pela IA; verificado na função, não no endpoint) |
 | T1 | B: Agente (2º) |  |  |  |  |  | Mesmo aceite do modo A |
 | T2 | Agente — escopo definido, mudança em vários trechos e em testes existentes; v10 + suíte como oráculo |  |  |  |  |  | Aceite (R3.4): inválido → 422 com `{"erros": [{"campo", "erro"}]}`, um item por erro detectado; válido segue 201; v01–v11 passam; testes existentes que esperavam 400 ajustados para 422, com motivo registrado |
 
