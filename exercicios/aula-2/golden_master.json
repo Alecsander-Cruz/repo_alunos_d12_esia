@@ -1,0 +1,6019 @@
+{
+ "total_casos": 369,
+ "casos": [
+  {
+   "id": "C1_camisa_e_bola|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 150.05,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 160.39,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 160.59,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 136.4,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 146.48,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 146.81,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 158.65,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 129.57,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 139.53,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 139.92,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 151.63,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 136.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 139.1,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 137.8,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 140.4,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 150.05,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 160.39,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 160.59,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 122.75,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 132.57,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 133.03,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 144.61,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 150.05,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 160.39,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 160.59,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 262.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 267.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 265.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 270.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 236.25,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 240.75,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 238.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 243.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 223.12,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 227.38,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 225.25,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 229.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 262.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 267.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 265.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 270.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 262.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 267.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 265.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 270.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 223.55,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 235.29,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 234.79,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 248.29,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 262.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 267.5,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 265.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C2_chuteira|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CHUTEIRA-42",
+     "preco": 250.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 270.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 76.51,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 85.46,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 86.36,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 97.06,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 70.22,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 79.04,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 80.0,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 90.58,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 67.07,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 75.84,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 76.82,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 87.34,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 62.97,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 64.17,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 63.57,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 64.77,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 76.51,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 85.46,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 86.36,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 97.06,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 63.92,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 72.63,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 73.64,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 84.11,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 76.51,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 85.46,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 86.36,
+   "tipo": "float"
+  },
+  {
+   "id": "C3_varias_bolas|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "BOLA-01",
+     "preco": 19.99,
+     "qtd": 3
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 97.06,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 223.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 235.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 234.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 248.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 202.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 213.89,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 213.59,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 226.69,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 192.05,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 203.19,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 202.99,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 215.89,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 210.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 214.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 212.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 216.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 223.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 235.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 234.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 248.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 181.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 192.49,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 192.39,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 205.09,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 223.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 235.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 234.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_00|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 248.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 223.53,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 235.28,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 234.78,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 248.28,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 202.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 213.88,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 213.58,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 226.68,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 192.04,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 203.18,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 202.98,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 215.88,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 209.99,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 213.99,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 211.99,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 215.99,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 223.53,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 235.28,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 234.78,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 248.28,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 181.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 192.48,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 192.38,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 205.08,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 223.53,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 235.28,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 234.78,
+   "tipo": "float"
+  },
+  {
+   "id": "F_199_99|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 199.99,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 248.28,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 210.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 214.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 212.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 216.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 202.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 213.9,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 213.6,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 226.7,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 192.05,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 203.2,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 203.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 215.9,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 210.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 214.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 212.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 216.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 210.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 214.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 212.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 216.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 181.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 192.5,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 192.4,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 205.1,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 210.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 214.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 212.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_200_01|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 200.01,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 216.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 233.33,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 237.78,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 235.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 240.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 223.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 235.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 234.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 248.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 211.88,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 223.4,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 223.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 236.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 233.33,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 237.78,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 235.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 240.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 233.33,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 237.78,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 235.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 240.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 200.21,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 211.51,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 211.23,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 224.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 233.33,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 237.78,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 235.55,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_22|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.22,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 240.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 233.34,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 237.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 235.56,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 240.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 210.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 214.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 212.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 216.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 211.89,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 223.41,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 223.02,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 236.3,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 233.34,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 237.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 235.56,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 240.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 233.34,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 237.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 235.56,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 240.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 200.22,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 211.52,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 211.24,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 224.3,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 233.34,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 237.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 235.56,
+   "tipo": "float"
+  },
+  {
+   "id": "F_222_23|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 222.23,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 240.01,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 246.75,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 251.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 249.1,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 253.8,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 222.07,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 226.31,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 224.19,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 228.42,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 223.28,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 235.03,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 234.53,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 248.02,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 246.75,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 251.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 249.1,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 253.8,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 246.75,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 251.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 249.1,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 253.8,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 210.94,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 222.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 222.07,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 235.33,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 246.75,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 251.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 249.1,
+   "tipo": "float"
+  },
+  {
+   "id": "F_235_00|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 235.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 253.8,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 15.64,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 23.43,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 24.91,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 34.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 15.44,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 23.22,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 24.7,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 34.24,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 15.33,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 23.11,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 24.59,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 34.13,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 2.1,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 2.14,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 2.12,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 2.16,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 15.64,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 23.43,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 24.91,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 34.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 15.22,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 23.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 24.49,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 34.02,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 15.64,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 23.43,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 24.91,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_2_00|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 2.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 34.45,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 15.22,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 23.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 24.49,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 34.02,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 15.06,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 22.83,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 24.32,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 33.85,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 14.97,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 22.75,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 24.23,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 33.76,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 1.68,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 1.71,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 1.7,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 1.73,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 15.22,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 23.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 24.49,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 34.02,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 14.89,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 22.66,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 24.15,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 33.67,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 15.22,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 23.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 24.49,
+   "tipo": "float"
+  },
+  {
+   "id": "F_arred_1_60|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 1.6,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 34.02,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|PROMO10|PE",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|PROMO10|SP",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|PROMO10|RJ",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|PROMO10|BA",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|VIP15|PE",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|VIP15|SP",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|VIP15|RJ",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|VIP15|BA",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|INVALIDO|PE",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|INVALIDO|SP",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_vazio|INVALIDO|BA",
+   "natal": "0",
+   "itens": [],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|SEM_CUPOM|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|SEM_CUPOM|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|SEM_CUPOM|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|PROMO10|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|PROMO10|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|PROMO10|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|PROMO10|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|VIP15|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|VIP15|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|VIP15|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|VIP15|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "VIP15",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|FRETEGRATIS|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "PE"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|FRETEGRATIS|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "SP"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|FRETEGRATIS|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "RJ"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|FRETEGRATIS|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": "BA"
+   },
+   "saida": 0.0,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag0|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag0|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag0|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag0|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag1|PE",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag1|SP",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag1|RJ",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|NATAL_flag1|BA",
+   "natal": "1",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "NATAL",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|INVALIDO|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "PE"
+   },
+   "saida": 13.54,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|INVALIDO|SP",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "SP"
+   },
+   "saida": 21.29,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|INVALIDO|RJ",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "RJ"
+   },
+   "saida": 22.79,
+   "tipo": "float"
+  },
+  {
+   "id": "F_qtd_zero|INVALIDO|BA",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 0
+    }
+   ],
+   "kwargs": {
+    "cupom": "INVALIDO",
+    "uf": "BA"
+   },
+   "saida": 32.29,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|uf_minuscula_pe",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "pe"
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|cupom_minusculo_promo10",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "promo10",
+    "uf": "PE"
+   },
+   "saida": 150.05,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|cupom_vazio",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "",
+    "uf": "PE"
+   },
+   "saida": 150.05,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|uf_omitida",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "PROMO10"
+   },
+   "saida": 136.4,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|cupom_e_uf_omitidos",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {},
+   "saida": 150.05,
+   "tipo": "float"
+  }
+ ]
+}
