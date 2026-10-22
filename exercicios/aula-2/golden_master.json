@@ -1,5 +1,5 @@
 {
- "total_casos": 369,
+ "total_casos": 384,
  "casos": [
   {
    "id": "C1_camisa_e_bola|SEM_CUPOM|PE",
@@ -6014,6 +6014,298 @@
    "kwargs": {},
    "saida": 150.05,
    "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|uf_none",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": null
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|uf_vazia",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": ""
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|uf_int",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": 26
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|uf_lista",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": [
+     "PE"
+    ]
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|uf_dict",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": {
+     "uf": "PE"
+    }
+   },
+   "saida": 172.69,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|cupom_int",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": 10,
+    "uf": "PE"
+   },
+   "saida": 150.05,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|cupom_lista",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": [
+     "PROMO10"
+    ],
+    "uf": "PE"
+   },
+   "saida": 150.05,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|cupom_dict",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": {
+     "cupom": "PROMO10"
+    },
+    "uf": "SP"
+   },
+   "saida": 160.39,
+   "tipo": "float"
+  },
+  {
+   "id": "C1_camisa_e_bola|fretegratis_uf_lista",
+   "natal": "0",
+   "itens": [
+    {
+     "sku": "CAMISA-M",
+     "preco": 80.0,
+     "qtd": 1
+    },
+    {
+     "sku": "BOLA-01",
+     "preco": 50.0,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": "FRETEGRATIS",
+    "uf": [
+     "SP"
+    ]
+   },
+   "saida": 140.4,
+   "tipo": "float"
+  },
+  {
+   "id": "M_item_sem_qtd|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "erro": "KeyError"
+  },
+  {
+   "id": "M_item_sem_preco|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "erro": "KeyError"
+  },
+  {
+   "id": "M_preco_texto|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": "80.0",
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "erro": "TypeError"
+  },
+  {
+   "id": "M_preco_none|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": null,
+     "qtd": 1
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "erro": "TypeError"
+  },
+  {
+   "id": "M_qtd_float|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": [
+    {
+     "preco": 80.0,
+     "qtd": 1.5
+    }
+   ],
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "saida": 139.55,
+   "tipo": "float"
+  },
+  {
+   "id": "M_itens_none|SEM_CUPOM|PE",
+   "natal": "0",
+   "itens": null,
+   "kwargs": {
+    "cupom": null,
+    "uf": "PE"
+   },
+   "erro": "TypeError"
   }
  ]
 }
