@@ -5,6 +5,14 @@ FRETE_POR_UF = {"PE": 12.9, "SP": 19.9, "RJ": 21.5}
 TAXA_POR_UF = {"PE": 0.05, "SP": 0.07, "RJ": 0.06}
 
 
+def _valor_por_uf(tabela, uf, padrao):
+    # busca por igualdade, não por hash: UF não hashable (ex.: lista) cai no padrão
+    for chave, valor in tabela.items():
+        if uf == chave:
+            return valor
+    return padrao
+
+
 def calcular_total(itens, cupom=None, uf="PE"):
     """Calcula o total do pedido."""
     # soma dos itens
@@ -13,62 +21,26 @@ def calcular_total(itens, cupom=None, uf="PE"):
         preco = i["preco"]
         qtd = i["qtd"]
         total = total + preco * qtd
-    # total = round(total, 2)  # tentamos arredondar aqui em 2023, desfeito
 
-    # desconto
-    desconto_aplicado = False
-    if cupom is not None:
-        if cupom == "PROMO10":
-            total = total * 0.9
-            desconto_aplicado = True
-        elif cupom == "VIP15":
-            total = total * 0.85
-            desconto_aplicado = True
-        elif cupom == "FRETEGRATIS":
-            # tratado mais abaixo
-            desconto_aplicado = False
-        elif cupom == "NATAL":
-            # campanha antiga; só vale se a flag estiver ligada
-            if flags.promo_natal_ativa():
-                total = total * 0.8
-                desconto_aplicado = True
-            else:
-                desconto_aplicado = False
-        else:
-            # cupom desconhecido é ignorado
-            desconto_aplicado = False
+    # desconto (cupom desconhecido é ignorado; FRETEGRATIS é tratado no frete)
+    if cupom == "PROMO10":
+        total = total * 0.9
+    elif cupom == "VIP15":
+        total = total * 0.85
+    elif cupom == "NATAL" and flags.promo_natal_ativa():
+        # campanha antiga; só vale se a flag estiver ligada
+        total = total * 0.8
 
     # frete
-    frete = 0
-    if cupom == "FRETEGRATIS":
+    if cupom == "FRETEGRATIS" or total > 200:
         frete = 0
     else:
-        if total > 200:
-            frete = 0
-        else:
-            if uf == "PE":
-                frete = 12.9
-            elif uf == "SP":
-                frete = 19.9
-            elif uf == "RJ":
-                frete = 21.5
-            else:
-                frete = 29.9
+        frete = _valor_por_uf(FRETE_POR_UF, uf, 29.9)
     total = total + frete
 
     # taxa de serviço por UF
-    if uf == "PE":
-        taxa = 0.05
-    elif uf == "SP":
-        taxa = 0.07
-    elif uf == "RJ":
-        taxa = 0.06
-    else:
-        taxa = 0.08
+    taxa = _valor_por_uf(TAXA_POR_UF, uf, 0.08)
     imposto = total * taxa
     total = total + imposto
-
-    if desconto_aplicado:
-        pass  # reservado para relatório de descontos (não implementado)
 
     return round(total, 2)
