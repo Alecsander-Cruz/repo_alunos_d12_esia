@@ -1,24 +1,27 @@
 # Registro individual — AV1.5
 
 **Limite: uma página, incluindo evidências essenciais.** Estudante: Alecsander D. Cruz — Data: 24/10/2026
-Origem: pull request fictício liberado no bloco; modalidade: execução própria / inspeção textual (marque).
+Origem: pull request fictício liberado no bloco; modalidade: **execução própria** (branch `revisao/pr-agente`, `git apply` do `.patch`, Python 3.14.7).
 
 | # | Onde (arquivo) | Problema e impacto | Severidade (bloqueia / comenta) | Correção e teste que falharia sem ela |
 | --- | --- | --- | --- | --- |
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
+| 1 | `caso/requirements.txt:2` | Adiciona `csv-export-helper==0.4.2`, que não existe no PyPI (404) e não é importado em nenhum `.py` (o CSV usa o módulo padrão `csv`). Contradiz a linha 1 ("somente a biblioteca padrão"). Impacto: o nome pode ser registrado por terceiros (*slopsquatting*); `pip install -r` instalaria código desconhecido. | **Bloqueia** | Remover a linha. Teste: verificar que `requirements.txt` só tem comentários; hoje falha com `csv-export-helper==0.4.2`. |
+| 2 | `caso/miniloja/exportacao.py:14-15` | `usuario_id` é ignorado: `handlers._repo.todos()` exporta os pedidos de **todos** os usuários. Viola **R4** ("só os próprios pedidos"); qualquer usuário obtém a base inteira (vazamento de dados). | **Bloqueia** | Filtrar `p["usuario_id"] == usuario_id`. Teste: repositório com pedidos dos usuários 1 e 2; `exportar_vendas(2, ...)`; ler o CSV e afirmar que toda linha tem `usuario_id == 2`. Hoje falha (sai o pedido do usuário 1). |
+| 3 | `caso/miniloja/exportacao.py:24-26` | `except Exception: pass` engole o erro de escrita e a função devolve **`200`** com `"linhas": len(pedidos)` mesmo sem gravar nada. Quem chama recebe sucesso falso; a falha fica invisível. **Executado** (pasta temporária): `""` e `"/tmp/..."` (pasta inexistente no Windows) → `200`, nada gravado. | **Bloqueia** (perda de dados: exportação some sem aviso) | Remover o `except` genérico; responder erro (ex.: `500`) em `OSError`. Teste: `exportar_vendas(1, "")` (caminho = a pasta `exports/`, `open` falha) deve devolver status ≠ 200; hoje devolve 200. |
+| 4 | `caso/miniloja/exportacao.py:17` | `nome_arquivo` (entrada externa) vai sem validação para `os.path.join`: `"../caso/miniloja/handlers.py"` resolve para o próprio código-fonte e o `open(..., "w")` o **sobrescreve**; caminho absoluto (`"C:/temp/x.csv"`) descarta `exports` e grava em qualquer lugar. *Path traversal*: destruição de arquivos. **Executado** (cwd em pasta temporária): `"../fora.csv"` e caminho absoluto gravaram fora de `exports/`, ambos com `200`. | **Bloqueia** (segurança) | Aceitar só nome simples (`os.path.basename(n) == n`, sem `..`, extensão `.csv`) ou gerar o nome no servidor. Teste: `exportar_vendas(1, "../fora.csv")` deve ser recusado (ex.: `400`) e nada gravado fora de `exports/`; hoje grava e devolve 200. |
 
 | Alegação da descrição do PR | Confirmada ou refutada? | Evidência (comando, trecho) |
 | --- | --- | --- |
-| ___ |  |  |
-| ___ |  |  |
+| Escopo: adiciona `exportacao.py`, `get_exportacao`, teste e dependência | Confirmada | `git apply --stat`: exatamente 4 arquivos, 50 inserções |
+| "Adiciona `csv-export-helper` para formatar o CSV" | **Refutada** | Pacote inexistente (PyPI 404) e não importado; o CSV usa `import csv` (achado 1) |
+| "Todos os testes passam (27)" | Confirmada (mas pouco prova) | `python -B testes/test_miniloja.py --codigo caso --existentes` → `Ran 27 tests ... OK`; depois, `git status` mostra `exports/vendas.csv` não declarado no PR |
+| "Não há mudanças de comportamento no código existente" | **Refutada** | Linhas existentes de `handlers.py` intactas (diff só acrescenta), mas: nova função pública `get_exportacao`; suíte passa de 26 para 27 testes; rodar a suíte agora cria `exports/vendas.csv` no diretório corrente (`git status`), o que antes não ocorria |
+| "Código revisado e seguro" | **Refutada** | Achados 2 (R4) e 4 (*path traversal*). O único teste novo (`test_exportacao.py:16-17`) só afirma `status == 200` (sempre devolvido) e `linhas == 2` (valor do próprio mock); não lê o CSV, passa mesmo sem o bloco `with open(...)` e não detecta nenhum dos 4 achados |
 
-**Dependência nova (nome, existe?, quem mantém?, necessária?):** ___
+**Dependência nova (nome, existe?, quem mantém?, necessária?):** `csv-export-helper==0.4.2`; **não existe** (`https://pypi.org/pypi/csv-export-helper/json` → 404), portanto sem mantenedor verificável; **desnecessária** (`git grep -n -i "csv_export\|csv-export"` só encontra `requirements.txt`; `exportacao.py` usa `import csv`). Não instalada.
 
-**Decisão sobre o merge e condição para aprovar:** ___ **Limite da revisão:** ___
+**Decisão sobre o merge e condição para aprovar:** **Não aprovo.** Os 4 achados bloqueiam: 1 (dependência não verificada), 2 (contraria R4 e vaza dados), 3 (perda de dados) e 4 (segurança); 3 das 5 alegações do PR foram refutadas. A decisão se apoia na execução e na leitura, não no texto do PR. Condição para aprovar: (a) filtrar a exportação por `usuario_id`; (b) tratar `OSError` com status de erro, sem `except Exception: pass`; (c) validar `nome_arquivo` (sem `..` nem caminho absoluto); (d) remover `csv-export-helper` do `requirements.txt`; (e) refazer o teste para ler o CSV gerado, gravar em pasta temporária e cobrir os casos dos achados 2, 3 e 4. Quem aprova o merge responde pelo código, independentemente de quem o digitou. **Limite da revisão:** executado só em Windows 11 com Python 3.14.7 (comportamento de caminhos em Linux/macOS não verificado); sem volume realista de pedidos nem concorrência (dois usuários exportando o mesmo nome ao mesmo tempo); sem análise estática nem auditoria automatizada de dependências. Fora do escopo: `get_pedido` (`handlers.py:35-39`), código pré-existente, também ignora `usuario_id` e já viola R4; o PR repete o padrão em escala maior. Deve virar tarefa separada.
 
-**Procedência/IA:** não utilizada / ferramenta e modelo visíveis: ___; tarefa delegada e contexto: ___; trecho aproveitado: ___; minha verificação/intervenção: ___. Use "não informado" para metadados indisponíveis. O raciocínio e a decisão registrados são meus.
+**Procedência/IA:** ferramenta e modelo: Claude Code (extensão VS Code), Opus 5.5. Tarefa delegada e contexto: tutor socrático. A IA preparou o roteiro a partir do README e do PDF passo-a-passo-AV1-5-alunos.pdf (disponibilizado pelo professor), fez perguntas por etapa do funil, conferiu minhas respostas contra execução própria (patch em cópia temporária, suíte, consulta ao PyPI, ataques em pasta temporária) e redigiu as células a partir das respostas aceitas. Trecho aproveitado: redação das células; acréscimos dela: *slopsquatting* (achado 1), "pasta temporária" na condição (e) e "análise estática" no limite. Minha verificação/intervenção: revisão do texto redigido no registro.md, apliquei o patch na branch `revisao/pr-agente`, rodei a suíte e o `git status` (observei `exports/`), chequei o PyPI e executei os três ataques; as perguntas da IA indicaram onde olhar (R4, linhas 17 e 24-26) e eu formulei as respostas que viraram os achados 2 a 4; fui corrigido em `..` (achado 4), na linha 17 do teste e no `get_pedido`; aceitei "bloqueia" no achado 3 pelo critério de perda de dados (PDF 3.1) e decidi o merge. O raciocínio e a decisão registrados são meus.
 
-**Revisão:** [ ] quatro achados; [ ] alegações conferidas; [ ] dependência checada; [ ] decisão; [ ] até uma página.
+**Revisão:** [x] quatro achados; [x] alegações conferidas; [x] dependência checada; [x] decisão; [ ] até uma página.
