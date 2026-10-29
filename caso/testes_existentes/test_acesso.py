@@ -1,0 +1,39 @@
+import unittest
+
+from miniloja import handlers
+
+DONO = 10
+OUTRO = 20
+
+
+class TestAcessoPedidos(unittest.TestCase):
+    """R4: um usuário só pode ver os próprios pedidos."""
+
+    def _criar_pedido(self, usuario_id):
+        status, pedido = handlers.post_pedidos(
+            usuario_id, {"itens": [{"sku": "CAMISA-M", "preco": 50.0, "qtd": 1}], "uf": "PE"}
+        )
+        self.assertEqual(status, 201)
+        return pedido
+
+    def test_outro_usuario_recebe_404_ao_pedir_pedido_alheio(self):
+        pedido = self._criar_pedido(DONO)
+        status, _ = handlers.get_pedido(OUTRO, pedido["id"])
+        self.assertEqual(status, 404)
+
+    def test_pedido_alheio_responde_igual_a_pedido_inexistente(self):
+        pedido = self._criar_pedido(DONO)
+        # IDs são sequenciais: id + 1 é o próximo a ser atribuído, tem formato
+        # válido e ainda não existe (nenhum pedido é criado antes dos GETs abaixo).
+        inexistente = handlers.get_pedido(OUTRO, pedido["id"] + 1)
+        alheio = handlers.get_pedido(OUTRO, pedido["id"])
+        self.assertEqual(alheio, inexistente)
+        _, corpo = alheio
+        for campo in ("itens", "total", "total_fmt", "usuario_id"):
+            self.assertNotIn(campo, corpo)
+
+    def test_dono_ve_o_proprio_pedido(self):
+        pedido = self._criar_pedido(DONO)
+        status, corpo = handlers.get_pedido(DONO, pedido["id"])
+        self.assertEqual(status, 200)
+        self.assertEqual(corpo, pedido)
